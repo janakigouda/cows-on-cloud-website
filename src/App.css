@@ -1,38 +1,161 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  background-color: #f4f4f4;
+}
+header{
+  width: 100%;
+  background-color: white;
+  height: 500px;
+}
+nav{
+  width: 100%;
+  display: flex;
+}
+nav .logo2{
+  display: none;
+}
+nav .logo1{
+  width: 35%;
+  padding: 20px 10px 10px 50px;
+}
+nav .logo1>a{
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  color: #cf7500;
+}
+nav .logo1>a:hover{
+  color: #f0a500;
+}
+nav .navigation{
+  width: 65%;
+  padding: 20px 60px 20px 20px;
+}
+nav .navigation ul{
+  display: flex;
+  float: right;
+  margin-top: 10px;
+}
+nav .navigation ul li{
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+nav .navigation ul li a{
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1a1c20;
+}
+nav .navigation ul li a:hover{
+  color: #f0a500;
+}
+header .login-btn{
+  width: 40%;
+  padding: 30px;
+  margin-left: 60px;
+  margin-top: 100px;
+}
+header .login-btn>div{
+  width: 30%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header .login-btn div a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  padding: 15px 60px;
+  border-radius: 5px;
+  background-color: #f0a500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header .login-btn div a:hover{
+  background-color: #cf7500;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header .download{
+  position: absolute;
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 30%;
+  background-color: white;
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+  padding: 10px 20px;
+}
+header .download .dow-container{
+  width: 100%;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+header .download .dow-container .download-btn{
+  width: 60%;
+  padding: 5px;
+  flex-flow: row;
+}
+
+header .download .dow-container .download-btn .download-name{
+  text-align: center;
+  font-size: 22px;
+}
+header .download .dow-container .download-btn .btns{
+  display: flex;
+  margin-top: 10px;
+}
+header .download .dow-container .download-btn .google,
+header .download .dow-container .download-btn .apple{
+  display: flex;
+  background-color:black;
+  margin: 5px;
+  padding: 5px;
+  width: 450px;
+  height: 35px;
+  border-radius: 5px;
+}
+header .download .dow-container .download-btn .google .btn-name,
+header .download .dow-container .download-btn .apple .btn-name{
+  margin: 0;
+  height: 10px;
+}
+header .download .dow-container .download-btn .google .btn-name .btn-name-get,
+header .download .dow-container .download-btn .apple .btn-name .btn-name-on{
+  font-size: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+header .download .dow-container .download-btn .google .btn-name .btn-name-google,
+header .download .dow-container .download-btn .apple .btn-name .btn-name-apple{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  line-height: 1px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .download .dow-container .download-btn .btns .google:hover,
+header .download .dow-container .download-btn .btns .apple:hover{
+  box-shadow:  7px 7px 14px #dfdede,
+  -7px -7px 10px #fffafa;
+}
+header .download .dow-container .download-btn .download-name{
+  padding: 35px 5px 5px 0px;
+  line-height:25px;
+  color: #1a1c20;
+  font-weight: 500;
+}
+header .download .dow-container .download-btn .google>img,
+header .download .dow-container .download-btn .apple>img{
+ padding-top: 5px;
+}
+ header .download .dow-container .mobile-img{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ header .download .dow-container .mobile-img>img{
+  width: 150px;
+  height: 250px;
 }
