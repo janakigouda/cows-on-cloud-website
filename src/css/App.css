@@ -3,17 +3,19 @@
   padding: 0;
 }
 body{
-  width: 100%;
   background-color: #f4f4f4;
+  height: auto;
 }
 header{
   width: 100%;
   background-color: white;
   height: 500px;
 }
+
 nav{
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 nav .logo2{
   display: none;
@@ -32,73 +34,47 @@ nav .logo1>a:hover{
   color: #f0a500;
 }
 nav .navigation{
-  width: 65%;
-  padding: 20px 60px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 nav .navigation ul{
   display: flex;
   float: right;
   margin-top: 10px;
-}
-nav .navigation ul li{
   list-style-type: none;
-  padding: 10px;
-  border-radius: 5px;
+  justify-content: space-between;
 }
 nav .navigation ul li a{
-  padding: 10px;
+  justify-content: space-between;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #1a1c20;
+  padding: 14px 16px;
 }
 nav .navigation ul li a:hover{
   color: #f0a500;
 }
-header .login-btn{
-  width: 40%;
-  padding: 30px;
-  margin-left: 60px;
-  margin-top: 100px;
-}
-header .login-btn>div{
-  width: 30%;
-  text-align: center;
-}
-header .login-btn div a{
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  padding: 15px 60px;
-  border-radius: 5px;
-  background-color: #f0a500;
-}
-header .login-btn div a:hover{
-  background-color: #cf7500;
-}
 header .download{
   position: absolute;
+  overflow: hidden;
   width: 40%;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 190px;
   margin-left: 30%;
   background-color: white;
   box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
-  padding: 10px 20px;
 }
 header .download .dow-container{
-  width: 100%;
   padding: 10px;
   display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 header .download .dow-container .download-btn{
   width: 60%;
   padding: 5px;
   flex-flow: row;
 }
-
 header .download .dow-container .download-btn .download-name{
   text-align: center;
   font-size: 22px;
@@ -113,7 +89,7 @@ header .download .dow-container .download-btn .apple{
   background-color:black;
   margin: 5px;
   padding: 5px;
-  width: 450px;
+  width: 500px;
   height: 35px;
   border-radius: 5px;
 }
@@ -148,14 +124,16 @@ header .download .dow-container .download-btn .download-name{
 header .download .dow-container .download-btn .google>img,
 header .download .dow-container .download-btn .apple>img{
  padding-top: 5px;
+ width: 30px;
 }
- header .download .dow-container .mobile-img{
+header .download .dow-container .mobile-img{
+  padding: 5px;
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
- header .download .dow-container .mobile-img>img{
+header .download .dow-container .mobile-img>img{
   width: 150px;
   height: 250px;
 }

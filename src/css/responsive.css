@@ -1,0 +1,214 @@
+@media only screen and (min-width: 690px) and (max-width:991px){
+    header{
+        width: 100%;
+        background-color: white;
+    }
+    nav .logo1{
+        padding: 20px 10px 10px 30px;
+    }
+    nav .logo1>a{
+        font-size: 35px;
+    }
+    nav .navigation ul li a{
+        padding: 12px 13px;
+    }
+    header{
+        height: 400px;
+    }
+    header .download{
+        width: 40%;
+        margin-left: 30%;
+    }
+    header .download .dow-container .download-btn{
+        width: 65%;
+    }
+    header .download .dow-container .mobile-img>img{
+        width: 80px;
+        height: 180px;
+      }
+    header .download .dow-container .download-btn .download-name{
+        font-size: 15px;
+    } 
+    header .download .dow-container .download-btn .google>img,
+    header .download .dow-container .download-btn .apple>img{
+        width: 17px;
+    }
+    header .download .dow-container .download-btn .google .btn-name .btn-name-get,
+    header .download .dow-container .download-btn .apple .btn-name .btn-name-on{
+        font-size: 5px;
+    }
+    header .download .dow-container .download-btn .google .btn-name .btn-name-google,
+    header .download .dow-container .download-btn .apple .btn-name .btn-name-apple{
+        font-size: 10px;
+    }
+    header .download .dow-container .download-btn .google,
+    header .download .dow-container .download-btn .apple{
+        width: 700px;
+        height: 25px;
+    }
+    header .download .dow-container .mobile-img{
+        width: 35%;
+    }
+}
+
+
+@media only screen and (min-width:350px) and (max-width: 600px){
+    nav .logo2{
+        display: block;
+        width: 10%;
+    }
+    nav .logo2 .fa{
+        margin-top: 10px;
+        margin-left: 5px;
+        padding:10px;
+        color:#cf7500;
+    }
+    nav .logo2 .fa:hover{
+        color: #f0a500;
+    }
+    nav .logo1{
+        width: 90%;
+        padding: 10px 10px 10px 10px;
+    }
+    nav .logo1>a{
+        font-size: 25px;
+    }
+    nav .navigation{
+        display: none;
+        transition: width 2s;
+    }
+    nav .open{
+        display: block;
+        background-color: #cf7500;
+        position: absolute;
+        margin-top: 52px;
+        padding: 0;
+        width: 100%;
+    }
+    nav .navigation ul {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    nav .navigation ul li{
+        width: 100%;
+        padding: 10px;
+    }
+    nav .navigation ul li>a{
+        width: 100%;
+        margin-left: 20px;
+        padding: 0;
+        color: white;
+    }
+    nav .navigation ul li:hover,
+    nav .navigation ul li a:hover{
+        background-color: #f0a500;
+        color: white;
+    }
+    header .download{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 300px;
+        border-radius: 0;
+    }
+    header .download .dow-container{
+        flex-wrap: wrap;
+    }
+    header .download .dow-container .download-btn{
+        background-color: white;
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+    header .download .dow-container .mobile-img{
+        position: absolute;
+        width: 91%;
+    }
+    header .download .dow-container .download-btn .download-name{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width: 340px){
+    nav .logo2{
+        display: block;
+        width: 10%;
+    }
+    nav .logo2 .fa{
+        margin-top: 10px;
+        margin-left: 5px;
+        padding:10px;
+        color:#cf7500;
+    }
+    nav .logo2 .fa:hover{
+        color: #f0a500;
+    }
+    nav .logo1{
+        width: 90%;
+        padding: 10px 10px 10px 10px;
+    }
+    nav .logo1>a{
+        font-size: 24px;
+    }
+    nav .navigation{
+        display: none;
+        transition: width 2s;
+    }
+    nav .open{
+        display: block;
+        background-color: #cf7500;
+        position: absolute;
+        margin-top: 50px;
+        padding: 0;
+        width: 100%;
+    }
+    nav .navigation ul {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    nav .navigation ul li{
+        width: 100%;
+        padding: 10px;
+    }
+    nav .navigation ul li>a{
+        width: 100%;
+        margin-left: 20px;
+        padding: 0;
+        color: white;
+        font-size: 14px;
+    }
+    nav .navigation ul li:hover,
+    nav .navigation ul li a:hover{
+        background-color: #f0a500;
+        color: white;
+    }
+    header .download{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 300px;
+        border-radius: 0;
+    }
+    header .download .dow-container{
+        flex-wrap: wrap;
+    }
+    header .download .dow-container .download-btn{
+        background-color: white;
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+    header .download .dow-container .mobile-img{
+        position: absolute;
+        width: 91%;
+    }
+    header .download .dow-container .download-btn .download-name{
+        font-size: 15px;
+    }
+    header .download .dow-container .download-btn .google .btn-name .btn-name-google,
+    header .download .dow-container .download-btn .apple .btn-name .btn-name-apple{
+        font-size: 15px;
+    }  
+}
