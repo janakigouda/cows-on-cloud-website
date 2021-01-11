@@ -6,23 +6,25 @@ body{
   background-color: #f4f4f4;
   height: auto;
 }
-header{
-  width: 100%;
-  background-color: white;
-  height: 500px;
+.navigation-container{
+  height: 64px;
+  position: relative;
 }
-
 nav{
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 nav .logo2{
   display: none;
 }
 nav .logo1{
   width: 35%;
-  padding: 20px 10px 10px 50px;
+  padding: 5px 5px 5px 50px;
 }
 nav .logo1>a{
   text-decoration: none;
@@ -34,7 +36,8 @@ nav .logo1>a:hover{
   color: #f0a500;
 }
 nav .navigation{
-  padding: 20px 20px 20px 20px;
+  padding: 10px;
+  transition: 0.2s;
 }
 nav .navigation ul{
   display: flex;
@@ -46,45 +49,100 @@ nav .navigation ul{
 nav .navigation ul li a{
   justify-content: space-between;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #1a1c20;
   padding: 14px 16px;
 }
 nav .navigation ul li a:hover{
   color: #f0a500;
 }
-header .download{
-  position: absolute;
+
+/* footer */
+.footer{
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+.f-container{
+  /* position: fixed; */
+  width: 100%;
+}
+
+.f-container .part1{
+  display: flex;
+  background-color: ghostwhite;
+  padding: 20px;
+}
+.f-container .part1 .div1,
+.f-container .part1 .div2{
+  width: 25%;
+}
+.f-container .part1 .div1 .heading,
+.f-container .part1 .div2 .heading{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  color: gray;
+}
+.f-container .part1 .div1 .brand-name{
+  padding: 5px;
+  color: #cf7500;
+  font-size: 25px;
+  font-weight: 500;
+}
+.f-container .part1 .div1 .brand-tag{
+  padding:5px ;
+  font-size: 15px;
+  font-weight: 500; 
+  color: rgb(109, 109, 109);
+}
+.f-container .part1 .div2 .details{
+  padding: 5px;
+}
+.f-container .part1 .div2 .details>h4{
+  font-size: 17px;
+}
+.f-container .part1 .div2 .details>p{
+  padding-top: 5px;
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+}
+
+.div3{
+  width: 50%;
+}
+.download{
   overflow: hidden;
-  width: 40%;
+  width: 90%;
+  margin-right:5% ;
   border-radius: 10px;
-  margin-top: 190px;
-  margin-left: 30%;
   background-color: white;
   box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
 }
-header .download .dow-container{
+.download .dow-container{
   padding: 10px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
 }
-header .download .dow-container .download-btn{
+.download .dow-container .download-btn{
   width: 60%;
   padding: 5px;
   flex-flow: row;
 }
-header .download .dow-container .download-btn .download-name{
+.download .dow-container .download-btn .download-name{
   text-align: center;
   font-size: 22px;
 }
-header .download .dow-container .download-btn .btns{
+.download .dow-container .download-btn .btns{
   display: flex;
   margin-top: 10px;
 }
-header .download .dow-container .download-btn .google,
-header .download .dow-container .download-btn .apple{
+.download .dow-container .download-btn .google,
+.download .dow-container .download-btn .apple{
   display: flex;
   background-color:black;
   margin: 5px;
@@ -93,47 +151,460 @@ header .download .dow-container .download-btn .apple{
   height: 35px;
   border-radius: 5px;
 }
-header .download .dow-container .download-btn .google .btn-name,
-header .download .dow-container .download-btn .apple .btn-name{
+.download .dow-container .download-btn .google .btn-name,
+.download .dow-container .download-btn .apple .btn-name{
   margin: 0;
   height: 10px;
 }
-header .download .dow-container .download-btn .google .btn-name .btn-name-get,
-header .download .dow-container .download-btn .apple .btn-name .btn-name-on{
+.download .dow-container .download-btn .google .btn-name .btn-name-get,
+.download .dow-container .download-btn .apple .btn-name .btn-name-on{
   font-size: 10px;
   color: white;
 }
-header .download .dow-container .download-btn .google .btn-name .btn-name-google,
-header .download .dow-container .download-btn .apple .btn-name .btn-name-apple{
+.download .dow-container .download-btn .google .btn-name .btn-name-google,
+.download .dow-container .download-btn .apple .btn-name .btn-name-apple{
   text-decoration: none;
   font-size: 20px;
   color: white;
   line-height: 1px;
 }
-header .download .dow-container .download-btn .btns .google:hover,
-header .download .dow-container .download-btn .btns .apple:hover{
+.download .dow-container .download-btn .btns .google:hover,
+.download .dow-container .download-btn .btns .apple:hover{
   box-shadow:  7px 7px 14px #dfdede,
   -7px -7px 10px #fffafa;
 }
-header .download .dow-container .download-btn .download-name{
+.download .dow-container .download-btn .download-name{
   padding: 35px 5px 5px 0px;
   line-height:25px;
   color: #1a1c20;
   font-weight: 500;
 }
-header .download .dow-container .download-btn .google>img,
-header .download .dow-container .download-btn .apple>img{
+.download .dow-container .download-btn .google>img,
+.download .dow-container .download-btn .apple>img{
  padding-top: 5px;
  width: 30px;
 }
-header .download .dow-container .mobile-img{
+.download .dow-container .mobile-img{
   padding: 5px;
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .download .dow-container .mobile-img>img{
+.download .dow-container .mobile-img>img{
   width: 150px;
   height: 250px;
 }
+.f-container .part2{
+  display: flex;
+  background-color: rgb(194, 192, 192);
+  padding: 20px;
+}
+.f-container .part2 .division1{
+  display: flex;
+  width: 50%;
+}
+.f-container .part2 .division1 .vl{
+  margin-top: 5px;
+  margin: 5px 7px;
+  border-right: 2px solid rgb(63, 63, 63);
+  height: 15px;
+}
+.f-container .part2 .division1 div a{
+  color: rgb(63, 63, 63);
+  text-decoration: none;
+}
+.f-container .part2 .division2 {
+  width: 45%;
+}
+.f-container .part2 .division2 .copyright{
+  padding: 5px;
+  float: right;
+}
+.f-container .part2 .division2 .copyright>h4,
+.f-container .part2 .division2 .copyright>h3{
+  padding: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+/* home */
+.home{
+  width: 100%;
+  position: relative;
+  background-image: url("../assets/cow2.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size:100% 600px;
+}
+.home-container{
+  padding: 250px 30px 30px 30px;
+}
+.home-container .c-name{
+  padding: 25px;
+}
+.home-container .c-name>div{
+  font-size:45px;
+  color: white;
+  font-weight: 700;
+  margin-top: 20px;
+  text-shadow: 1px 1px 5px rgb(72, 71, 71);
+}
+.home-container .c-desc{
+  padding: 5px 5px 5px 25px;
+}
+.home-container .c-desc div{
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px rgb(72, 71, 71);
+}
+
+/* about */
+.about{
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+
+}
+.about-container{
+  margin: 40px;
+  padding: 50px;
+  width: 60%;
+  margin-left: 16%;
+  box-shadow:  7px 7px 14px #dfdede,
+  -7px -7px 10px #fffafa;
+
+}
+.ab-name{
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+.ab-para{
+  padding: 10px;
+}
+.ab-para p{
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+/* services */
+.services{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+.services-container{
+  padding: 10px;
+}
+.services-container .ser-head{
+  text-align: center;
+  padding:5px ;
+  margin-top: 10px;
+}
+.services-container .ser-head .ser-name{
+  padding:5px ;
+}
+.services-container .ser-head .ser-name>h3{
+  font-size: 30px;
+}
+.services-container .ser-head .ser-par>p{
+  font-size: 15px;
+}
+.services-container .ser-body{
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+.services-container .ser-body .ser-card{
+  width: 33%;
+  padding: 10px;
+}
+.services-container .ser-body .ser-card .ser-icon{
+  text-align: center;
+}
+.services-container .ser-body .ser-card .ser-icon .fa{
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  background-color: #f0a500;
+  color: white;
+  font-size:70px;
+  border-radius: 70px;
+  padding: 20px;
+}
+.services-container .ser-body .ser-card .ser-icon .fa:hover{
+  color: #cf7500;
+}
+.services-container .ser-body .ser-card .ser-desc{
+  text-align: center;
+  padding: 20px;
+}
+.services-container .ser-body .ser-card .ser-desc>h4{
+  font-size: 23px;
+  padding: 5px;
+  color: #cf7500;
+}
+.services-container .ser-body .ser-card .ser-desc>p{
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* team */
+.team{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+.team-container{
+  padding: 20px;
+}
+.team-container .t-name{
+  padding: 20px;
+  text-align: center;
+}
+.team-container .t-name>div{
+  font-size: 30px;
+  font-weight: 700;
+}
+.team-container .team-body{
+  display: flex;
+  width: 100%;
+}
+.team-container .team-body .card{
+  width: 33%;
+  text-align: center;
+}
+.team-container .team-body .card .card-img{
+  width: 200px;
+  height: 200px;
+  margin-left: 27%;
+  background-color: #f0a500;
+  border-radius: 200px;
+}
+.team-container .team-body .card .card-img>img{
+  width: 170px;
+  height: 170px;
+  border-radius: 170px;
+  padding:15px;
+}
+.team-container .team-body .card .desc{
+  padding: 20px;
+}
+.team-container .team-body .card .desc .f-name{
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px;
+}
+.team-container .team-body .card .desc .founder{
+  font-size: 15px;
+  padding: 10px;
+}
+.team-container .team-body .card .desc .social-media{
+  display: flex;
+  width: 70%;
+  margin-left: 27%;
+}
+.team-container .team-body .card .desc .social-media>div{
+  flex-flow: row;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #f0a500;
+}
+.team-container .team-body .card .desc .social-media div>.fa{
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+}
+/* contact */
+.contact{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+.contact-container{
+  padding: 5px;
+}
+.contact-container .map{
+  width: 100%;
+  overflow: hidden;
+}
+.contact-container .map .map-container{
+  overflow: hidden;
+}
+.contact-container .map .map-container>img{
+  width: 100%;
+  height: 70vh;
+}
+.contact-container .contact-body{
+  position: relative;
+  width: 100%;
+  bottom:19rem;
+}
+.contact-container .contact-body .main-container{
+  position: absolute;
+  background-color: white;
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px gainsboro;
+}
+.contact-body .main-container .sub-container{
+  padding: 10px;
+  margin: 10px;
+}
+.contact-body .main-container .container-group1{
+  border-right: 1px solid gainsboro;
+  width: 60%;
+}
+.contact-body .main-container .sub-container>.contact-head-name{
+  font-size: 24px;
+  font-weight: 600;
+}
+.contact-body .main-container .sub-container .sub-container-body{
+  position: relative;
+}
+.contact-body .main-container .sub-container .sub-container-body .c-body{
+  width: 100%;
+}
+.sub-container .sub-container-body .c-body .b-input{
+  padding: 1px;
+}
+.sub-container .sub-container-body .c-body .b-input>.input{
+  width: 80%;
+  height: 20px;
+  padding:10px;
+  margin: 10px;
+  border-radius: 40px;
+  border: 1px solid gainsboro;
+}
+.sub-container .sub-container-body .c-body .b-input>.input:hover,
+.sub-container .sub-container-body .c-body .b-input>.input:focus{
+  box-shadow: 1px 1px 10px gainsboro;
+}
+.sub-container .sub-container-body .c-button{
+  padding:10px ;
+}
+.sub-container .sub-container-body .c-button .c-button-container{
+  width: 100%;
+  text-align: start;
+}
+.sub-container .sub-container-body .c-button .c-button-container>a{
+  text-decoration: none;
+  padding: 10px 50px;
+  background-color: #f0a500;
+  color: white;
+  border-radius: 30px;
+}
+.sub-container .sub-container-body .c-button .c-button-container>a:hover{
+  background-color: #cf7500;
+  box-shadow: 1px 1px 10px rgb(240, 189, 96);
+}
+.sub-container .sub-container-body .c-body{
+  display: flex;
+  padding-top: 10px;
+}
+.sub-container .sub-container-body .c-body .c-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #f0a500;
+  margin: 5px;
+  text-align: center;
+}
+.sub-container .sub-container-body .c-body .c-icon .fa{
+  padding: 15px 0px 0px 0px;
+  color: white;
+}
+.sub-container .sub-container-body .c-body .c-desc{
+  padding: 5px;
+}
+.sub-container .sub-container-body .c-body .c-desc h3{
+  padding-bottom: 5px;
+}
+.sub-container .sub-container-body .c-body .c-desc p{
+  color: gray;
+}
+
+/* login */
+.login{
+  width: 100%;
+  background-image: url("../assets/cow2.jpg");
+  background-size: 100% 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+.login-container{
+  padding:50px 25px 25px 25px;
+}
+.login-main{
+  width: 35%;
+  margin-left: 32.5%;
+  background-image: url("../assets/cow1.jpg");
+  background-size: 100% 550px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px gainsboro;
+  padding: 10px;
+  height: 400px;
+}
+.login-main .login-name{
+  padding: 10px ;
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+}
+.login-main .login-name div{
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+.login-main .login-body{
+  width: 100%;
+}
+.login-main .login-body .input-body{
+  padding:  60px 10px 60px 15px;
+  border-bottom: 1px solid gainsboro;
+}
+.login-main .login-body .input-body .input{
+  width: 90%;
+  margin-left:5% ;
+  height: 20px;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background: transparent;
+    border: none;
+}
+.login-main .login-body .input-body .input::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+}
+.login-main .login-body .button{
+  padding: 25px 5px 25px 5px;
+}
+.login-main .login-body .button .button-container{
+  width: 100%;
+  text-align: center;
+}
+.login-main .login-body .button .button-container .login-btn{
+  padding: 10px 80px;
+  border-radius: 50px;
+  background-color: #f0a500;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+.login-main .login-body .button .button-container .login-btn:hover{
+  background-color: #cf7500;
+}
+
+

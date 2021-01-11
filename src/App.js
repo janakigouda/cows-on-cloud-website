@@ -1,14 +1,14 @@
 import React from 'react';
 import './css/App.css';
 import './css/responsive.css';
-import Header from './components/Header';
+import Nav from './components/Nav';
+import Footer from './components/footer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header />
+    <div>
+      <Nav />
+      <Footer />
     </div>
   );
 }
-
-export default App;
