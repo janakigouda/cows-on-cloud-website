@@ -43,16 +43,17 @@
     .download .dow-container .download-btn{
         width: 70%;
     }
-    .download .dow-container .download-btn .google .btn-name .btn-name-get,
-    .download .dow-container .download-btn .apple .btn-name .btn-name-on{
+    .download .dow-container .download-btn a .google .btn-name .btn-name-get,
+    .download .dow-container .download-btn a .apple .btn-name .btn-name-on{
     font-size: 8px;
     }
-    .download .dow-container .download-btn .google .btn-name .btn-name-google,
-    .download .dow-container .download-btn .apple .btn-name .btn-name-apple{
-        font-size: 15px;
+    .download .dow-container .download-btn a .google .btn-name .btn-name-google,
+    .download .dow-container .download-btn a .apple .btn-name .btn-name-apple{
+        font-size: 16px;
+        line-height: 16px;
     }
-    .download .dow-container .download-btn .google>img,
-    .download .dow-container .download-btn .apple>img{
+    .download .dow-container .download-btn a .google>img,
+    .download .dow-container .download-btn a .apple>img{
     width: 18px;
     }
     .download .dow-container .mobile-img{
@@ -156,6 +157,12 @@
     nav .navigation ul {
         flex-wrap: wrap;
         width: 100%;
+    }
+    nav .navigation .on{
+        display: block;
+    }
+    nav .navigation .off{
+        display: none;
     }
     nav .navigation ul li{
         width: 100%;
@@ -261,21 +268,102 @@
         width: 90%;
         margin-left: 4%;
     }
-    /* services */
-    
-
-
+    /* contact */
+    .contact{
+        height: 110vh;
+    }
+    .contact-container .map .map-container>img{
+        height: 30vh;
+    }
+    .contact-container .contact-body .main-container{
+        width: 90%;
+        margin-left:5% ;
+        display: block;
+    }
+    .contact-body .main-container .sub-container{
+        padding:0px;
+        margin: 5px;
+        width: 97%;
+    }
+    .contact-body .main-container .container-group1{
+        border-right: none;
+        border-bottom: 1px solid gainsboro;
+    }
+    .contact-body .main-container .sub-container>.contact-head-name{
+        padding-top: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sub-container .sub-container-body .c-body .b-input>.input{
+        width: 85%;
+        margin-left: 13px;
+        height: 15px;
+    }
+    .sub-container .sub-container-body .c-button{
+        margin-bottom: 10px;
+    }
+    .sub-container .sub-container-body .c-button .c-button-container{
+        width: 100%;
+    text-align: center;
+    }
+    .sub-container .sub-container-body .c-button .c-button-container>a{
+        padding: 8px 50px;
+    }
+    .sub-container .sub-container-body .c-body .c-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+    .sub-container .sub-container-body .c-body .c-icon .fa{
+        padding: 12px 0px 0px 0px;
+        color: white;
+    }
+    .sub-container .sub-container-body .c-body .c-desc h3{
+        font-size: 18px;
+    }
+    .sub-container .sub-container-body .c-body .c-desc p{
+        font-size: 12px;
+    }
+    /* login */
+    .login{
+        height: 65vh;
+        background-size:100% 65vh;
+    }
+    .login-container{
+        padding: 15px;
+    }
+    .login-main{
+        width: 80%;
+        margin-left: 10%;
+        height: 46vh;
+        background-size: 100% 350px;
+    }
+    .login-main .login-body .input-body{
+        padding:  20px 10px 20px 15px;
+    }
+    .login-main .login-body .input-body .input{
+        height: 15px;
+    }
+    .login-main .login-body .input-body .input::placeholder{
+        font-size: 12px;
+    }
+    .login-main .login-body .button .button-container .login-btn{
+    padding: 8px 80px;
+    }
 }
 
 @media only screen and (min-width:280px) and (max-width: 340px){
+    .navigation-container{
+        height: 49px;
+    }
     nav .logo2{
         display: block;
         width: 10%;
     }
     nav .logo2 .fa{
-        margin-top: 10px;
+        margin-top: 8px;
         margin-left: 5px;
-        padding:10px;
+        padding:5px 10px;
         color:#cf7500;
     }
     nav .logo2 .fa:hover{
@@ -283,69 +371,297 @@
     }
     nav .logo1{
         width: 90%;
-        padding: 10px 10px 10px 10px;
+        padding: 5px 10px 10px 10px;
     }
     nav .logo1>a{
-        font-size: 24px;
+        font-size: 22px;
     }
     nav .navigation{
         display: none;
-        transition: width 2s;
     }
     nav .open{
         display: block;
         background-color: #cf7500;
-        position: absolute;
-        margin-top: 50px;
+        position: fixed;
+        margin-top: 46px;
         padding: 0;
         width: 100%;
-    }
+    }  
     nav .navigation ul {
         flex-wrap: wrap;
         width: 100%;
     }
     nav .navigation ul li{
         width: 100%;
-        padding: 10px;
+        padding: 5px;
     }
     nav .navigation ul li>a{
         width: 100%;
         margin-left: 20px;
         padding: 0;
         color: white;
-        font-size: 14px;
+        font-size: 13px;
     }
     nav .navigation ul li:hover,
     nav .navigation ul li a:hover{
         background-color: #f0a500;
         color: white;
+    } 
+    /* footer */
+    .f-container .part1{
+        padding: 5px; 
+        display: block;
     }
-    header .download{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 300px;
-        border-radius: 0;
-    }
-    header .download .dow-container{
-        flex-wrap: wrap;
-    }
-    header .download .dow-container .download-btn{
-        background-color: white;
+    .f-container .part1 .div1,
+    .f-container .part1 .div2{
         width: 100%;
-        margin-top: 250px;
-        margin-left: 0;
+        margin-top: 5px;
+        box-shadow: 1px 1px 5px gainsboro;
+        flex: 100%;
+    }
+    .f-container .part1 .div1 .heading,
+    .f-container .part1 .div2 .heading{ 
+        font-size: 14px;
+    }
+    .f-container .part1 .div1 .brand-name{
+        font-size: 18px;
+    }
+    .f-container .part1 .div2 .details>h4{
+        font-size: 18px;
+    }
+    .f-container .part1 .div2 .details{
+        padding-bottom:20px ;
+    }
+    .f-container .part1 .div2 .details>p{
+        font-size: 12px;
+    }
+    .f-container .part1 .div1 .brand-tag{
+        font-size: 13px;
+    }
+    .div3{
+        width: 100%;
+    }
+    .download{
+        width: 100%;
+        border-radius: 2px;
+    }
+    .download .dow-container{
+        display: block;
+    }
+    .download .dow-container .download-btn{
+        width: 100%;
+    }
+    .download .dow-container .mobile-img{
+        width: 100%;
+    }
+    .f-container .part2{
+        padding: 5px;
+    }
+    .f-container .part2 .division1{
+        width: 35%;
+    }
+    .f-container .part2 .division2{
+        width: 65%;
+    }
+    .f-container .part2 .division1 .vl{
+        margin: 1px 1px;
+        height: 8px;
+        margin-top: 10px;
+    }
+    .f-container .part2 .division1 div a{
+        font-size: 8px;
+    }
+    .f-container .part2 .division2 .copyright>h4,
+    .f-container .part2 .division2 .copyright>h3{
+        font-size: 10px;
+    }
+    .download .dow-container .download-btn a .google,
+    .download .dow-container .download-btn a .apple{
+        height: 26px;
+    }
+    .download .dow-container .download-btn a .google .btn-name .btn-name-google,
+    .download .dow-container .download-btn a .apple .btn-name .btn-name-apple{
+        font-size: 16px;
+    }
+    .download .dow-container .download-btn .google>img,
+    .download .dow-container .download-btn .apple>img{
+        width: 25px;
+    }
+    .f-container .part2 .division2 .copyright>h4,
+    .f-container .part2 .division2 .copyright>h3{
+        font-size:9px ;
+    }
+    /* home */
+    .home{
+        height: 50vh;
+        background-size:100% 50vh;
+    }
+    .home-container{
+        padding: 140px 10px 10px 5px;
+    }
+    .home-container .c-name{
+        padding: 25px 5px 5px 25px;
+    }
+    .home-container .c-name>div{
+        font-size: 30px;
+    }
+    .home-container .c-desc{
+        padding: 0px 0px 0px 25px;
+    }
+    .home-container .c-desc div{
+        font-size: 14px;
+    }
+    /* about */
+    .about-container{
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+        margin-left: 4%;
+    }
+    .ab-name{
+        font-size: 22px;
+    }
+    .ab-para p{
+        font-size: 14px;
+    }
+    /* services */
+    .services-container .ser-head .ser-name>h3{
+        font-size: 22px;
+    }
+    .services-container .ser-head .ser-par>p{
+        font-size: 13px;
+    }
+    .services-container .ser-body{
+        margin-top: 20px;
+    }
+    .services-container .ser-body .ser-card .ser-icon .fa{
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        font-size: 50px;
+    }
+    .services-container .ser-body .ser-card {
         padding: 0;
-        justify-content: space-between;
     }
-    header .download .dow-container .mobile-img{
-        position: absolute;
-        width: 91%;
+    .services-container .ser-body .ser-card .ser-desc>h4{
+        font-size: 20px;
     }
-    header .download .dow-container .download-btn .download-name{
+    .services-container .ser-body .ser-card .ser-desc>p{
+        font-size: 12px;
+    }
+    /* team */
+    .team-container .t-name>div{
+        font-size: 22px;
+    }
+    .team-container .team-body .card .card-img{
+        margin-left: 23%;
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+    .team-container .team-body .card .card-img>img{
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+    }
+    .team-container .team-body .card .desc .f-name{
+        font-size: 20px;
+    }
+    .team-container .team-body .card .desc .founder{
+        font-size: 12px;
+    }
+    .team-container .team-body .card .desc .social-media{
+        margin-left: 20%;
+    }
+    .team-container .team-body .card .desc .social-media>div{
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+    }
+    .team-container .team-body .card .desc .social-media div>.fa{
         font-size: 15px;
+        padding: 13px;
     }
-    header .download .dow-container .download-btn .google .btn-name .btn-name-google,
-    header .download .dow-container .download-btn .apple .btn-name .btn-name-apple{
-        font-size: 15px;
-    }  
+    /* contact */
+    .contact{
+        height: 110vh;
+    }
+    .contact-container .map .map-container>img{
+        height: 30vh;
+    }
+    .contact-container .contact-body .main-container{
+        width: 90%;
+        margin-left:5% ;
+        display: block;
+    }
+    .contact-body .main-container .sub-container{
+        padding:0px;
+        margin: 5px;
+        width: 97%;
+    }
+    .contact-body .main-container .container-group1{
+        border-right: none;
+        border-bottom: 1px solid gainsboro;
+    }
+    .contact-body .main-container .sub-container>.contact-head-name{
+        padding-top: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sub-container .sub-container-body .c-body .b-input>.input{
+        width: 85%;
+        margin-left: 10px;
+        height: 12px;
+    }
+    .sub-container .sub-container-body .c-button{
+        margin-bottom: 10px;
+    }
+    .sub-container .sub-container-body .c-button .c-button-container{
+        width: 100%;
+        text-align: center;
+    }
+    .sub-container .sub-container-body .c-button .c-button-container>a{
+        padding: 7px 50px;
+    }
+    .sub-container .sub-container-body .c-body .c-icon{
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+    }
+    .sub-container .sub-container-body .c-body .c-icon .fa{
+        padding: 10px 0px 0px 0px;
+        color: white;
+    }
+    .sub-container .sub-container-body .c-body .c-desc h3{
+        font-size: 16px;
+    }
+    .sub-container .sub-container-body .c-body .c-desc p{
+        font-size: 12px;
+    }
+    /* login */
+    .login{
+        height: 65vh;
+        background-size:100% 65vh;
+    }
+    .login-container{
+        padding: 15px;
+    }
+    .login-main{
+        width: 80%;
+        margin-left: 6%;
+        height: 55vh;
+        background-size: 100% 400px;
+    }
+    .login-main .login-body .input-body{
+        padding:  20px 10px 20px 15px;
+    } 
+    .login-main .login-body .input-body .input{
+        height: 10px;
+    }
+    .login-main .login-body .input-body .input::placeholder{
+        font-size: 12px;
+    }
+    .login-main .login-body .button .button-container .login-btn{
+        padding: 7px 80px;
+    } 
 }

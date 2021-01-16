@@ -41,8 +41,8 @@ export default function Footer() {
                     </div>
                     <div className="division2">
                         <div className="copyright">
-                            <h4>©2020 CowsOnCloud.com. All Rights Reserved.</h4>
-                            <h3>Managed by Adis Technology | Belgaum</h3>
+                            <h4>©2021 <a href="/">CowsOnCloud.com </a>. All Rights Reserved.</h4>
+                            <h3>Managed by Adis Technologies | Belagavi</h3>
                         </div>
                     </div>
                 </div>

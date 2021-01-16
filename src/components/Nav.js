@@ -21,7 +21,7 @@ function Nav() {
                         <div id="menuToggle" className="logo2" onClick={() => setActive(!active)}><i className="fa fa-bars"></i></div>
                         <div className="logo1"><Link to="/">CowsOnCloud</Link></div>
                         <div className={active ? "navigation open" : "navigation"}>
-                            <ul>
+                            <ul onClick={() => setActive(!active)}>
                                 <li>
                                     <Link to="/">Home</Link>
                                 </li>
