@@ -1,16 +1,20 @@
 @media only screen and (min-width: 690px) and (max-width:991px){
-    header{
+    .header{
         width: 100%;
-        background-color: white;
+        height: 50vh;
     }
     nav .logo1{
-        padding: 20px 10px 10px 30px;
+        padding: 10px 10px 10px 30px;
     }
     nav .logo1>a{
         font-size: 35px;
     }
     nav .navigation ul li a{
-        padding: 12px 13px;
+        padding:5px;
+    }
+    .navbar__link{
+        margin: 0.5em;
+        font-size: 13px;
     }
     /* footer */
     .f-container .part1 .div1,
@@ -74,15 +78,18 @@
 
     /* home */
     .home{
-        height: 500px;
-        background-size:100% 500px;
+        height: 50vh;
+        background-size:100% 50vh;
     }
     /* about */
     .about-container{
-        width: 70%;
-    margin-left: 10%;
-    padding: 40px;
+        width: 80%;
+        margin-left: 7%;
+        padding: 20px;
     }
+    .ab-para{
+        padding: 5px;
+      }
     /* team */
     .team-container .team-body .card .card-img{
         margin-left: 9%;
@@ -118,11 +125,21 @@
     .login-main .login-body .input-body{
         padding:  30px 10px 30px 15px;
     }
+    .login-main .login-body .button .button-container .login-btn{
+        padding:8px 40px;
+    }
 
 }
 
 
 @media only screen and (min-width:350px) and (max-width: 600px){
+    .header{
+        width: 100%;
+        height: 60vh;
+    }
+    .navigation-container{
+        height: 54px;
+    }
     nav .logo2{
         display: block;
         width: 10%;
@@ -243,8 +260,8 @@
     }
     /* home */
     .home{
-        height: 50vh;
-        background-size:100% 50vh;
+        height: 60vh;
+        background-size:100% 60vh;
     }
     .home-container{
         padding: 180px 10px 10px 5px;
@@ -348,11 +365,19 @@
         font-size: 12px;
     }
     .login-main .login-body .button .button-container .login-btn{
-    padding: 8px 80px;
+        padding: 5px 30px;
+        font-size: 14px;
     }
 }
 
 @media only screen and (min-width:280px) and (max-width: 340px){
+    .header{
+        width: 100%;
+        height: 60vh;
+    }
+    .navigation-container{
+        height: 54px;
+    }
     .navigation-container{
         height: 49px;
     }
@@ -493,8 +518,8 @@
     }
     /* home */
     .home{
-        height: 50vh;
-        background-size:100% 50vh;
+        height: 60vh;
+        background-size:100% 60vh;
     }
     .home-container{
         padding: 140px 10px 10px 5px;
@@ -649,11 +674,11 @@
     .login-main{
         width: 80%;
         margin-left: 6%;
-        height: 55vh;
+        height: 40vh;
         background-size: 100% 400px;
     }
     .login-main .login-body .input-body{
-        padding:  20px 10px 20px 15px;
+        padding:  10px 20px 20px 0px;
     } 
     .login-main .login-body .input-body .input{
         height: 10px;
@@ -662,6 +687,7 @@
         font-size: 12px;
     }
     .login-main .login-body .button .button-container .login-btn{
-        padding: 7px 80px;
+        padding: 5px 20px;
+        font-size: 12px;
     } 
 }

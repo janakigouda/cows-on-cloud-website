@@ -14,22 +14,32 @@ nav .logo2,
 .owl-nav .owl-prev{
   display: none;
 }
+.header{
+  background-image: url("../assets/cow05.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size:100% 100vh;
+}
 /* nav */
 .navigation-container{
-  height: 60px;
+  height: 64px;
   position: relative;
   z-index: 1;
 }
 nav{
-  background-color: white;
+  background-color: transparent;
   overflow: hidden;
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  height: inherit;
 }
-
+nav.active{
+  background-color: white;
+  transition:0.3s linear ;
+}
 nav .logo1{
   width: 35%;
   padding: 5px 5px 5px 50px;
@@ -38,10 +48,10 @@ nav .logo1>a{
   text-decoration: none;
   font-size: 40px;
   font-weight: 500;
-  color: #cf7500;
+  color: #f0a500;
 }
 nav .logo1>a:hover{
-  color: #f0a500;
+  color: #cf7500;
 }
 nav .navigation{
   padding: 10px;
@@ -57,14 +67,36 @@ nav .navigation ul{
 nav .navigation ul li a{
   justify-content: space-between;
   text-decoration: none;
-  font-size: 16px;
-  color: #1a1c20;
-  padding: 14px 16px;
+  padding: 12px 12px;
+
 }
 nav .navigation ul li a:hover{
   color: #f0a500;
 }
+.active .navigation ul li .navbar__link{
+  color: #1a1c20;
+}
+.navbar__link {
+  margin: 1em;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: .15em;
+  text-indent: .2em;
+  color: white;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
 
+.navbar__link:hover {
+  transform: translateY(-2px);
+}
+
+.navbar__link--active {
+  border-bottom: 2px solid #f0a500;
+  color: #f0a500;
+  transition: border-bottom .5s ease-in-out;
+}
 /* footer */
 .footer{
   overflow: hidden;
@@ -204,7 +236,7 @@ nav .navigation ul li a:hover{
 }
 .f-container .part2{
   display: flex;
-  background-color: rgb(97, 96, 96);
+  background-color: rgb(39, 35, 35);
   padding: 20px;
 }
 .f-container .part2 .division1{
@@ -242,12 +274,11 @@ nav .navigation ul li a:hover{
 /* home */
 .home{
   width: 100%;
+  height: 100vh;
   position: relative;
-  background-image: url("../assets/cow2.jpg");
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size:100% 600px;
+ background: inherit;
   overflow: hidden;
+  top: 0;
 }
 .home-container{
   padding: 250px 30px 30px 30px;
@@ -276,16 +307,17 @@ nav .navigation ul li a:hover{
 .about{
   overflow: hidden;
   width: 100%;
-  background-color: white;
+  background-color: transparent;
 }
 .about-container{
   margin: 40px;
   padding: 50px;
   width: 60%;
   margin-left: 16%;
-  box-shadow:  7px 7px 14px #dfdede,
-  -7px -7px 10px #fffafa;
-
+  box-shadow:  2px 2px 10px #f2a239,
+  -2px -2px 10px #eb9a43;
+  background-color: white;
+  border-radius: 5px;
 }
 .ab-name{
   text-align: center;
@@ -305,7 +337,7 @@ nav .navigation ul li a:hover{
   overflow: hidden;
   width: 100%;
   position: relative;
-  background-color: white;
+  background-color: transparent;
   z-index: 0;
 }
 .services-container{
@@ -329,8 +361,12 @@ nav .navigation ul li a:hover{
   padding:5px ;
 }
 .services-container .ser-head .ser-name>h3{
-  font-size: 30px;
+  font-size: 35px;
+  color: white;
+  letter-spacing: 0.5px;
+  padding-bottom: 5px;
 }
+
 .services-container .ser-head .ser-par>p{
   font-size: 15px;
 }
@@ -340,7 +376,6 @@ nav .navigation ul li a:hover{
   margin-top: 50px;
 }
 .services-container .ser-body .ser-card{
-  /* width: 100%; */
   flex-flow: row;
   padding: 10px;
 }
@@ -356,22 +391,25 @@ nav .navigation ul li a:hover{
   font-size:70px;
   border-radius: 70px;
   padding: 20px;
+  transition: 0.5s;
 }
-.services-container .ser-body .ser-card .ser-icon .fa:hover{
-  color: #cf7500;
+.services-container .ser-body .ser-card .ser-icon:hover .fa{
+  transform: scale(1.1); 
 }
 .services-container .ser-body .ser-card .ser-desc{
   text-align: center;
   padding: 20px;
 }
 .services-container .ser-body .ser-card .ser-desc>h4{
-  font-size: 23px;
+  font-size: 24px;
   padding: 5px;
-  color: #cf7500;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 .services-container .ser-body .ser-card .ser-desc>p{
   font-size: 14px;
   padding: 10px;
+  color: wheat;
 } 
 
 
@@ -380,7 +418,7 @@ nav .navigation ul li a:hover{
   overflow: hidden;
   width: 100%;
   position: relative;
-  background-color: white;
+  background-color: transparent;
   z-index: 0;
 }
 .team-container{
@@ -389,6 +427,7 @@ nav .navigation ul li a:hover{
 .team-container .t-name{
   padding: 20px;
   text-align: center;
+  color: white;
 }
 .team-container .t-name>div{
   font-size: 30px;
@@ -416,6 +455,10 @@ nav .navigation ul li a:hover{
   height: 170px;
   border-radius: 170px;
   padding:15px;
+  transition: 0.5s;
+}
+.team-container .team-body .card .card-img:hover>img{
+  transform: scale(1.5); 
 }
 .team-container .team-body .card .desc{
   padding: 20px;
@@ -424,10 +467,12 @@ nav .navigation ul li a:hover{
   font-size: 25px;
   font-weight: 700;
   padding: 5px;
+  color: white;
 }
 .team-container .team-body .card .desc .founder{
   font-size: 15px;
   padding: 10px;
+  color: wheat;
 }
 .team-container .team-body .card .desc .social-media{
   display: flex;
@@ -446,7 +491,12 @@ nav .navigation ul li a:hover{
   font-size: 20px;
   color: white;
   padding: 15px;
+  transition: 0.5s ;
 }
+.team-container .team-body .card .desc .social-media div:hover>.fa{
+  transform: scale(1.5); 
+}
+
 /* contact */
 .contact{
   width: 100%;
@@ -564,7 +614,7 @@ nav .navigation ul li a:hover{
 /* login */
 .login{
   width: 100%;
-  background-image: url("../assets/cow2.jpg");
+  background-image: url("../assets/cow05.jpg");
   background-size: 100% 600px;
   height: 600px;
   background-repeat: no-repeat;
@@ -576,11 +626,10 @@ nav .navigation ul li a:hover{
 .login-main{
   width: 35%;
   margin-left: 32.5%;
-  background-image: url("../assets/cow1.jpg");
   background-size: 100% 550px;
   background-repeat: no-repeat;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px gainsboro;
+  box-shadow: 1px 1px 10px rgb(253, 157, 83);
   padding: 10px;
   height: 400px;
   overflow: hidden;
@@ -588,7 +637,7 @@ nav .navigation ul li a:hover{
 .login-main .login-name{
   padding: 10px ;
   text-align: center;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(253, 157, 83);
 }
 .login-main .login-name div{
   font-size: 25px;
@@ -600,7 +649,7 @@ nav .navigation ul li a:hover{
 }
 .login-main .login-body .input-body{
   padding:  60px 10px 60px 15px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid rgb(253, 157, 83);
 }
 .login-main .login-body .input-body .input{
   width: 90%;
@@ -612,21 +661,28 @@ nav .navigation ul li a:hover{
   border-radius: 30px;
   margin-bottom: 20px;
   background: transparent;
-    border: 1px solid black;
-  box-shadow: 1px 1px 5px gainsboro;
+  border: 1px solid rgb(250, 151, 98);
+  box-shadow: 1px 1px 3px rgb(253, 157, 83);
 
 }
 .login-main .login-body .input-body .input:focus,
 .login-main .login-body .input-body .input:hover{
-  box-shadow: 1px 1px 10px gainsboro;
+  box-shadow: 1px 1px 10px rgb(226, 132, 60);
 }
 .login-main .login-body .input-body .input::placeholder{
   font-size: 14px;
   font-weight: 400;
   color: white;
 }
+.login-main .login-body .input-body input[type=email],
+.login-main .login-body .input-body input[type=password]{
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
 .login-main .login-body .button{
   padding: 25px 5px 25px 5px;
+  display: flex;
 }
 .login-main .login-body .button .button-container{
   width: 100%;
@@ -639,6 +695,7 @@ nav .navigation ul li a:hover{
   color: white;
   text-decoration: none;
   font-weight: 400;
+  letter-spacing: 0.5px;
 }
 .login-main .login-body .button .button-container .login-btn:hover{
   background-color: #cf7500;

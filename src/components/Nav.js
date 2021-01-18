@@ -3,6 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
+    NavLink,
     Link
 } from "react-router-dom";
 import Home from './Home';
@@ -14,31 +15,43 @@ import Login from './Login';
 
 function Nav() {
     const [active, setActive] = useState(false);
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackgrounfcolor= () =>{
+        if(window.scrollY >= 10){
+            setNavbar(true)
+        }else{
+            setNavbar(false)
+        }
+    }
+    window.addEventListener('scroll',changeBackgrounfcolor)
+
+
     return (
         <Router>
                 <div className="navigation-container">
-                    <nav>
+                    <nav className={navbar ? "active" : ""}>
                         <div id="menuToggle" className="logo2" onClick={() => setActive(!active)}><i className="fa fa-bars"></i></div>
                         <div className="logo1"><Link to="/">CowsOnCloud</Link></div>
                         <div className={active ? "navigation open" : "navigation"}>
-                            <ul onClick={() => setActive(!active)}>
+                            <ul onClick={() => setActive(!active)} className="navbar">
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <NavLink to="/" activeClassName="navbar__link--active" className="navbar__link" >Home</NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/about">About</Link>
+                                    <NavLink to="/about" activeClassName="navbar__link--active" className="navbar__link">About</NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/services">Services</Link>
+                                    <NavLink to="/services" activeClassName="navbar__link--active" className="navbar__link">Services</NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/team">Team</Link>
+                                    <NavLink to="/team" activeClassName="navbar__link--active" className="navbar__link">Team</NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/contact">Contact</Link>
+                                    <NavLink to="/contact" activeClassName="navbar__link--active" className="navbar__link">Contact</NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/login">Login</Link>
+                                    <NavLink to="/login" activeClassName="navbar__link--active" className="navbar__link">Login</NavLink>
                                 </li>
                             </ul>
                         </div>

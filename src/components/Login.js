@@ -6,16 +6,19 @@ export default function Login() {
             <div className="login-container">
                 <div className="login-main">
                     <div className="login-name">
-                        <div>Login</div>
+                        <div>Log In</div>
                     </div>
                     <div className="login-body">
                         <div className="input-body">
-                            <input type="email" placeholder="Enter Email *" className="input" />
+                            <input type="email" placeholder="Enter Email" className="input" />
                             <input type="password" placeholder="*******" className="input" />
                         </div>
                         <div className="button">
                             <div className="button-container">
-                                <a href="/#" className="login-btn">Login</a>
+                                <a href="/#" className="login-btn">Log In</a>
+                            </div>
+                            <div className="button-container">
+                                <a href="/#" className="login-btn">Sign Up</a>
                             </div>
                         </div>
                     </div>
