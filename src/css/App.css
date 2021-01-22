@@ -9,16 +9,15 @@ body{
 a{
   text-decoration: none;
 }
-nav .logo2,
-.owl-dots,
-.owl-nav .owl-prev{
+nav .logo2{
   display: none;
 }
 .header{
-  background-image: url("../assets/cow05.jpg");
-  height: 100vh;
+  background-image: url("../assets/cow04.jpg");
   background-repeat: no-repeat;
-  background-size:100% 100vh;
+  background-size:100%;
+  z-index: 0;
+  overflow: hidden;
 }
 /* nav */
 .navigation-container{
@@ -37,7 +36,8 @@ nav{
   height: inherit;
 }
 nav.active{
-  background-color: white;
+  background-color:white ;
+  width: 100%;
   transition:0.3s linear ;
 }
 nav .logo1{
@@ -281,16 +281,15 @@ nav .navigation ul li a:hover{
   top: 0;
 }
 .home-container{
-  padding: 250px 30px 30px 30px;
+  padding: 150px 30px 30px 30px;
 }
 .home-container .c-name{
-  padding: 25px;
+  padding: 0px 25px 25px 150px;
 }
 .home-container .c-name>div{
-  font-size:45px;
+  font-size:100px;
   color: white;
   font-weight: 700;
-  margin-top: 20px;
   text-shadow: 1px 1px 5px rgb(72, 71, 71);
 }
 .home-container .c-desc{
@@ -308,12 +307,12 @@ nav .navigation ul li a:hover{
   overflow: hidden;
   width: 100%;
   background-color: transparent;
+  /* height: 91vh; */
 }
 .about-container{
   margin: 40px;
-  padding: 50px;
-  width: 60%;
-  margin-left: 16%;
+  width: 75%;
+  margin-left: 12.5%;
   box-shadow:  2px 2px 10px #f2a239,
   -2px -2px 10px #eb9a43;
   background-color: white;
@@ -321,11 +320,11 @@ nav .navigation ul li a:hover{
 }
 .ab-name{
   text-align: center;
-  padding: 10px;
+  padding: 40px 0px 0px 0px ;
   font-size: 25px;
 }
 .ab-para{
-  padding: 10px;
+  padding: 40px;
 }
 .ab-para p{
   letter-spacing: 0.5px;
@@ -351,14 +350,8 @@ nav .navigation ul li a:hover{
 .services-container .ser-head .ser-name{
   padding:5px ;
 }
-.services-container .ser-head .ser-name>h3{
-  font-size: 30px;
-}
 .services-container .ser-head .ser-par>p{
   font-size: 15px;
-}
-.services-container .ser-head .ser-name{
-  padding:5px ;
 }
 .services-container .ser-head .ser-name>h3{
   font-size: 35px;
@@ -366,52 +359,74 @@ nav .navigation ul li a:hover{
   letter-spacing: 0.5px;
   padding-bottom: 5px;
 }
-
-.services-container .ser-head .ser-par>p{
-  font-size: 15px;
-}
 .services-container .ser-body{
-  display: flex;
-  width: 100%;
-  margin-top: 50px;
+  width: 75%;
+  margin-top: 10px;
+  margin-left: 12.5%;
 }
-.services-container .ser-body .ser-card{
+.services-container .ser-body .ser-card1{
+  display: flex;
   flex-flow: row;
   padding: 10px;
+  box-shadow: 1px 1px 10px rgb(213, 134, 61);
+  margin: 20px;
+  border-radius: 100px;
 }
-.services-container .ser-body .ser-card .ser-icon{
+.services-container .ser-body .ser-card1 .ser-icon,
+.services-container .ser-body .ser-card2 .ser-icon{
+  background-color: rgb(255, 253, 253);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   text-align: center;
 }
-.services-container .ser-body .ser-card .ser-icon .fa{
-  height: 70px;
-  width: 70px;
-  text-align: center;
-  background-color: #f0a500;
-  color: white;
-  font-size:70px;
-  border-radius: 70px;
-  padding: 20px;
-  transition: 0.5s;
+.services-container .ser-body .ser-card1 .ser-icon>img{
+  width: 170px;
+  height: 170px;
+  padding: 15px;
+  border-radius:50%;
+  transition: 0.3s;
 }
-.services-container .ser-body .ser-card .ser-icon:hover .fa{
-  transform: scale(1.1); 
+.services-container .ser-body .ser-card1 .ser-icon>img:hover,
+.services-container .ser-body .ser-card1 .ser-icon>.fa:hover,
+.services-container .ser-body .ser-card2 .ser-icon>.fa:hover{
+  transform: scale(1.2);
 }
-.services-container .ser-body .ser-card .ser-desc{
-  text-align: center;
-  padding: 20px;
-}
-.services-container .ser-body .ser-card .ser-desc>h4{
-  font-size: 24px;
-  padding: 5px;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-}
-.services-container .ser-body .ser-card .ser-desc>p{
-  font-size: 14px;
+.services-container .ser-body .ser-card2 {
   padding: 10px;
-  color: wheat;
-} 
-
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  box-shadow: 1px 1px 10px rgb(213, 134, 61);
+  margin: 20px;
+  border-radius: 100px;
+}
+.services-container .ser-body .ser-card1 .ser-desc,
+.services-container .ser-body .ser-card2 .ser-desc{
+  width: 60%;
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
+.services-container .ser-body .ser-card1 .ser-desc h4,
+.services-container .ser-body .ser-card2 .ser-desc h4{
+  font-size: 25px;
+  font-weight: 700; 
+  padding: 5px;
+}
+.services-container .ser-body .ser-card1 .ser-desc p,
+.services-container .ser-body .ser-card2 .ser-desc p{
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+}
+.services-container .ser-body .ser-card1 .ser-icon>.fa,
+.services-container .ser-body .ser-card2 .ser-icon>.fa{
+  text-align: center;
+  font-size:130px;
+  padding: 33px;
+  transition: 0.3s;
+  color: #f0a500;
+}
 
 /* team */
 .team{
@@ -441,6 +456,7 @@ nav .navigation ul li a:hover{
   width: 100%;
   text-align: center;
   overflow: hidden;
+  align-items: center;
 }
 .team-container .team-body .card .card-img{
   width: 200px;
@@ -496,7 +512,6 @@ nav .navigation ul li a:hover{
 .team-container .team-body .card .desc .social-media div:hover>.fa{
   transform: scale(1.5); 
 }
-
 /* contact */
 .contact{
   width: 100%;
@@ -614,7 +629,7 @@ nav .navigation ul li a:hover{
 /* login */
 .login{
   width: 100%;
-  background-image: url("../assets/cow05.jpg");
+  background-image: url("../assets/cow04.jpg");
   background-size: 100% 600px;
   height: 600px;
   background-repeat: no-repeat;
@@ -700,5 +715,73 @@ nav .navigation ul li a:hover{
 .login-main .login-body .button .button-container .login-btn:hover{
   background-color: #cf7500;
 }
-
-
+/* carousel */
+.about-down{
+  /* background-image: url("../assets/back-cow1.jpg");
+  width: 100%;
+  background-size: 40%; */
+  overflow: hidden;
+  z-index: 0;
+  padding: 20px
+}
+.about-down-container{
+  width:80%;
+  margin-left: 10%;  
+  z-index: 0;
+  overflow: hidden;
+}
+.ab-head-name{
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 35px;
+  padding-bottom: 40px;
+}
+.about-down-container .owl-carousel{
+  overflow: hidden;
+  z-index: 0;
+  width: 100%;
+}
+.about-down-container .owl-carousel .owl-stage-outer{
+  width: 100%;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage{
+  padding-bottom: 20px;
+   height: 350px;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item{
+  transition: 0.3s linear;
+  padding-top: 40px;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item{
+  height: inherit;
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  border-radius: 5px;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .img{
+  padding: 10px;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item>.img img{
+  height: 220px;
+  transition: 0.2s linear;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .i-name{
+  text-align: center;
+  padding-bottom: 5px;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .i-name p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.center{
+  height: 330px;
+  background-color: white;
+  box-shadow: 5px 5px 10px gainsboro;
+  border-radius: 5px;
+  padding-top: 20px!important;
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .center .item>.img img{
+  transform: scale(1.1,1.1);
+}
