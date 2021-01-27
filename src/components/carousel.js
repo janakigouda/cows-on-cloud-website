@@ -16,7 +16,7 @@ const option = {
     responsiveClass: true,
     responsive: {
         0: {
-            items: 3,
+            items: 1,
         },
         400: {
             items: 3,

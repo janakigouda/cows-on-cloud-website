@@ -75,6 +75,9 @@
     .f-container .part2 .division2 .copyright>h3{
         font-size:14px ;
     }
+    .download .dow-container .download-btn .apple-btn:hover + .hide{
+        margin-left: 140px;
+      }
 
     /* home */
     .home{
@@ -101,12 +104,10 @@
     .contact{
         height: 60vh;
     }
-    .contact-container .map .map-container>img{
-        height: 30vh;
-    }
-    .contact-container .contact-body .main-container{
+    .contact-container .contact-body{
         width: 80%;
         margin-left: 10%;
+        top:30%
     }
     /* login */
     .login{
@@ -128,7 +129,45 @@
     .login-main .login-body .button .button-container .login-btn{
         padding:8px 40px;
     }
-
+    /* about carousel */
+    .about-down-container{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item>.img img{
+        height: 180px;
+    }
+    .center{
+        height: 280px;
+        padding-top: 20px!important;
+      }
+      /* services */
+    .services-container .ser-body .ser-card1 .ser-icon,
+    .services-container .ser-body .ser-card2 .ser-icon{
+        width: 150px;
+        height: 150px;
+    }
+    .services-container .ser-body .ser-card1 .ser-icon>img{
+        width: 120px;
+        height: 120px;
+    }
+    .services-container .ser-body .ser-card1 .ser-icon>.fa,
+    .services-container .ser-body .ser-card2 .ser-icon>.fa{
+        font-size:100px;
+        padding: 25px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc h4,
+    .services-container .ser-body .ser-card2 .ser-desc h4{
+        font-size: 20px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc p,
+    .services-container .ser-body .ser-card2 .ser-desc p{
+        font-size: 10px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc,
+    .services-container .ser-body .ser-card2 .ser-desc{
+        margin-top: 40px;
+    }
 }
 
 
@@ -165,7 +204,7 @@
     }
     nav .open{
         display: block;
-        background-color: #cf7500;
+        background-color: white;
         position: fixed;
         margin-top: 52px;
         padding: 0;
@@ -189,13 +228,8 @@
         width: 100%;
         margin-left: 20px;
         padding: 0;
-        color: white;
+        color: #f0a500;
     }
-    nav .navigation ul li:hover,
-    nav .navigation ul li a:hover{
-        background-color: #f0a500;
-        color: white;
-    } 
     /* footer */
     .f-container .part1{
         padding: 5px; 
@@ -239,25 +273,31 @@
     }
     .f-container .part2{
         padding: 5px;
+        display: flex;
+        flex-flow: column-reverse nowrap;
     }
     .f-container .part2 .division1{
-        width: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .f-container .part2 .division2{
-        width: 65%;
-    }
-    .f-container .part2 .division1 .vl{
-        margin: 2px 2px;
-        height: 8px;
-        margin-top: 10px;
+        width: 100%;
     }
     .f-container .part2 .division1 div a{
         font-size: 9px;
     }
+    .f-container .part2 .division2 .copyright{
+        width: 100%;
+    }
     .f-container .part2 .division2 .copyright>h4,
     .f-container .part2 .division2 .copyright>h3{
         font-size: 10px;
+        text-align: center;
     }
+    .download .dow-container .download-btn .apple-btn:hover + .hide{
+        margin-left: 190px;
+      }
     /* home */
     .home{
         height: 60vh;
@@ -280,21 +320,32 @@
     }
     /* about */
     .about-container{
-        margin: 5px;
-        padding: 5px;
+        margin-top: 5px;
         width: 90%;
-        margin-left: 4%;
+        margin-left: 5%;
+    }
+    .ab-name{
+        padding: 20px 0px 0px 0px ;
+        font-size: 25px;
+    }
+    .ab-para{
+        padding: 20px;
+    }
+    .ab-para p{
+        font-size: 15px;
     }
     /* contact */
     .contact{
         height: 110vh;
     }
-    .contact-container .map .map-container>img{
-        height: 30vh;
+    .contact-container{
+        padding: 0;
     }
-    .contact-container .contact-body .main-container{
+    .contact-container .contact-body{
         width: 90%;
         margin-left:5% ;
+    }
+    .contact-container .contact-body .main-container{
         display: block;
     }
     .contact-body .main-container .sub-container{
@@ -341,6 +392,13 @@
     .sub-container .sub-container-body .c-body .c-desc p{
         font-size: 12px;
     }
+    /* team */
+    .team-container .team-body .card .card-img{
+        margin-left: 20%;
+    }
+    .team-container .team-body .card .desc .social-media{
+        margin-left: 20%;
+    }
     /* login */
     .login{
         height: 65vh;
@@ -351,7 +409,7 @@
     }
     .login-main{
         width: 80%;
-        margin-left: 10%;
+        margin-left: 7%;
         height: 46vh;
         background-size: 100% 350px;
     }
@@ -367,6 +425,42 @@
     .login-main .login-body .button .button-container .login-btn{
         padding: 5px 30px;
         font-size: 14px;
+    }
+    /* services */
+    .services-container .ser-body{
+        width:90%;
+        margin-left: 5%;
+    }
+    .services-container .ser-body .ser-card1,
+    .services-container .ser-body .ser-card2{
+        margin: 10px;
+    }
+    .services-container .ser-body .ser-card1 .ser-icon,
+    .services-container .ser-body .ser-card2 .ser-icon{
+        width: 90px;
+        height: 90px;
+    }
+    .services-container .ser-body .ser-card1 .ser-icon>img{
+        width: 70px;
+        height: 70px;
+        padding:10px
+    }
+    .services-container .ser-body .ser-card1 .ser-icon>.fa,
+    .services-container .ser-body .ser-card2 .ser-icon>.fa{
+        font-size:70px;
+        padding: 10px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc h4,
+    .services-container .ser-body .ser-card2 .ser-desc h4{
+        font-size: 15px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc p,
+    .services-container .ser-body .ser-card2 .ser-desc p{
+        font-size: 10px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc,
+    .services-container .ser-body .ser-card2 .ser-desc{
+        margin-top: 10px;
     }
 }
 
@@ -406,7 +500,7 @@
     }
     nav .open{
         display: block;
-        background-color: #cf7500;
+        background-color: white;
         position: fixed;
         margin-top: 46px;
         padding: 0;
@@ -424,14 +518,10 @@
         width: 100%;
         margin-left: 20px;
         padding: 0;
-        color: white;
+        color: #f0a500;
         font-size: 13px;
     }
-    nav .navigation ul li:hover,
-    nav .navigation ul li a:hover{
-        background-color: #f0a500;
-        color: white;
-    } 
+ 
     /* footer */
     .f-container .part1{
         padding: 5px; 
@@ -481,24 +571,27 @@
     }
     .f-container .part2{
         padding: 5px;
+        display: flex;
+        flex-flow: column-reverse nowrap;
     }
     .f-container .part2 .division1{
-        width: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .f-container .part2 .division2{
-        width: 65%;
-    }
-    .f-container .part2 .division1 .vl{
-        margin: 1px 1px;
-        height: 8px;
-        margin-top: 10px;
+        width: 100%;
     }
     .f-container .part2 .division1 div a{
-        font-size: 8px;
+        font-size: 9px;
+    }
+    .f-container .part2 .division2 .copyright{
+        width: 100%;
     }
     .f-container .part2 .division2 .copyright>h4,
     .f-container .part2 .division2 .copyright>h3{
         font-size: 10px;
+        text-align: center;
     }
     .download .dow-container .download-btn a .google,
     .download .dow-container .download-btn a .apple{
@@ -516,6 +609,9 @@
     .f-container .part2 .division2 .copyright>h3{
         font-size:9px ;
     }
+    .download .dow-container .download-btn .apple-btn:hover + .hide{
+        margin-left: 140px;
+      }
     /* home */
     .home{
         height: 60vh;
@@ -550,29 +646,40 @@
         font-size: 14px;
     }
     /* services */
-    .services-container .ser-head .ser-name>h3{
-        font-size: 22px;
-    }
-    .services-container .ser-head .ser-par>p{
-        font-size: 13px;
-    }
     .services-container .ser-body{
-        margin-top: 20px;
+        width:90%;
+        margin-left: 5%;
     }
-    .services-container .ser-body .ser-card .ser-icon .fa{
-        height: 50px;
-        width: 50px;
-        border-radius: 50px;
-        font-size: 50px;
+    .services-container .ser-body .ser-card1,
+    .services-container .ser-body .ser-card2{
+        margin: 10px;
     }
-    .services-container .ser-body .ser-card {
-        padding: 0;
+    .services-container .ser-body .ser-card1 .ser-icon,
+    .services-container .ser-body .ser-card2 .ser-icon{
+        width: 90px;
+        height: 90px;
     }
-    .services-container .ser-body .ser-card .ser-desc>h4{
-        font-size: 20px;
+    .services-container .ser-body .ser-card1 .ser-icon>img{
+        width: 70px;
+        height: 70px;
+        padding:10px
     }
-    .services-container .ser-body .ser-card .ser-desc>p{
-        font-size: 12px;
+    .services-container .ser-body .ser-card1 .ser-icon>.fa,
+    .services-container .ser-body .ser-card2 .ser-icon>.fa{
+        font-size:70px;
+        padding: 10px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc h4,
+    .services-container .ser-body .ser-card2 .ser-desc h4{
+        font-size: 15px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc p,
+    .services-container .ser-body .ser-card2 .ser-desc p{
+        font-size: 10px;
+    }
+    .services-container .ser-body .ser-card1 .ser-desc,
+    .services-container .ser-body .ser-card2 .ser-desc{
+        margin-top: 10px;
     }
     /* team */
     .team-container .t-name>div{
@@ -609,14 +716,16 @@
     }
     /* contact */
     .contact{
-        height: 110vh;
+        height: 160vh;
     }
-    .contact-container .map .map-container>img{
-        height: 30vh;
+    .contact-container{
+        padding: 0;
     }
-    .contact-container .contact-body .main-container{
+    .contact-container .contact-body{
         width: 90%;
         margin-left:5% ;
+    }
+    .contact-container .contact-body .main-container{
         display: block;
     }
     .contact-body .main-container .sub-container{

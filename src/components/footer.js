@@ -18,11 +18,12 @@ export default function Footer() {
                         Contact Details
                         </div>
                         <div className="details">
-                            <h4>CowsOnCloud</h4>
+                            <h4>Adis Technologies</h4>
                             <p>Hanuman nagar, Hindwadi</p>
                             <p>Belgaum</p>
                             <p>Karnataka</p>
-                            <p>Phone: <b>+91 876543210</b></p>
+                            <p><a href="mailto:cowsoncloud@gmail.com">Email: cowsoncloud@gmail.com</a></p>
+                            <a href="tel:+91 876543210"> <i className="fa fa-phone" aria-hidden="true"></i> +91 876543210</a>
                         </div>
                     </div>
                     <div className="div3">

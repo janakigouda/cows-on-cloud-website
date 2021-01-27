@@ -19,7 +19,7 @@ function Download() {
                                 </div>
                             </div>
                         </a>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
+                        <a href="/" target="_blank" rel="noopener noreferrer" className="apple-btn">
                             <div className="apple">
                                 <img src={apple} alt="apple" />
                                 <div className="btn-name">
@@ -28,6 +28,9 @@ function Download() {
                                 </div>
                             </div>
                         </a>
+                        <div className="hide">
+                            <div>Coming soon</div>
+                        </div>
                     </div>
                 </div>
                 <div className="mobile-img">

@@ -12,18 +12,14 @@ a{
 nav .logo2{
   display: none;
 }
-.header{
-  background-image: url("../assets/cow04.jpg");
-  background-repeat: no-repeat;
-  background-size:100%;
-  z-index: 0;
-  overflow: hidden;
-}
 /* nav */
 .navigation-container{
   height: 64px;
   position: relative;
   z-index: 1;
+  background-image: url("../assets/cow04.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
 }
 nav{
   background-color: transparent;
@@ -38,7 +34,7 @@ nav{
 nav.active{
   background-color:white ;
   width: 100%;
-  transition:0.3s linear ;
+  transition:0.2s linear ;
 }
 nav .logo1{
   width: 35%;
@@ -271,14 +267,39 @@ nav .navigation ul li a:hover{
 .f-container .part2 .division2 .copyright h4>a{
   color: white;
 }
+.fa-phone{
+  color:#cf7500;
+}
+.f-container .part1 .div2 .details a{
+  color: gray;
+  font-weight: 500;
+}
+.hide{
+  display: none;
+}
+.download .dow-container .download-btn .apple-btn:hover + .hide{
+  display: block;
+  position: absolute;
+  background-color: black;
+  color: #e1dcdc;
+  padding: 5px 10px;
+  border-radius: 5px ;
+  margin-left: 200px;
+  margin-top: -30px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
 /* home */
 .home{
   width: 100%;
   height: 100vh;
-  position: relative;
- background: inherit;
+  position: relative; 
   overflow: hidden;
   top: 0;
+  background-image: url("../assets/cow04.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
 }
 .home-container{
   padding: 150px 30px 30px 30px;
@@ -303,11 +324,18 @@ nav .navigation ul li a:hover{
 }
 
 /* about */
+.about-main{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  background-image: url("../assets/cow04.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
 .about{
   overflow: hidden;
   width: 100%;
-  background-color: transparent;
-  /* height: 91vh; */
 }
 .about-container{
   margin: 40px;
@@ -337,7 +365,9 @@ nav .navigation ul li a:hover{
   width: 100%;
   position: relative;
   background-color: transparent;
-  z-index: 0;
+  background-image: url("../assets/cow04.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
 }
 .services-container{
   padding: 10px;
@@ -374,6 +404,7 @@ nav .navigation ul li a:hover{
 }
 .services-container .ser-body .ser-card1 .ser-icon,
 .services-container .ser-body .ser-card2 .ser-icon{
+  position: relative;
   background-color: rgb(255, 253, 253);
   width: 200px;
   height: 200px;
@@ -402,11 +433,13 @@ nav .navigation ul li a:hover{
 }
 .services-container .ser-body .ser-card1 .ser-desc,
 .services-container .ser-body .ser-card2 .ser-desc{
+  position: relative;
   width: 60%;
   color: white;
   text-align: center;
   margin-top: 70px;
 }
+
 .services-container .ser-body .ser-card1 .ser-desc h4,
 .services-container .ser-body .ser-card2 .ser-desc h4{
   font-size: 25px;
@@ -426,14 +459,32 @@ nav .navigation ul li a:hover{
   padding: 33px;
   transition: 0.3s;
   color: #f0a500;
+}.services-container .ser-body .ser-card2 .ser-icon,
+.services-container .ser-body .ser-card1 .ser-desc{
+  animation-name: description;
+  animation-duration: 1s;
 }
-
+@keyframes description{
+  from  { left:400px;}
+  to  {left:0;}
+}
+.services-container .ser-body .ser-card1 .ser-icon,
+.services-container .ser-body .ser-card2 .ser-desc{
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from  { right:400px;}
+  to  {right:0;}
+}
 /* team */
 .team{
   overflow: hidden;
   width: 100%;
   position: relative;
-  background-color: transparent;
+  background-image: url("../assets/cow04.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
   z-index: 0;
 }
 .team-container{
@@ -512,40 +563,61 @@ nav .navigation ul li a:hover{
 .team-container .team-body .card .desc .social-media div:hover>.fa{
   transform: scale(1.5); 
 }
+.team-container .team-body .owl-carousel .owl-stage-outer .owl-stage .owl-item .card-1{
+  position: relative;
+  animation-name: card1;
+  animation-duration: 1s;
+}
+@keyframes card1{
+  from{right:400px}
+  to{right: 0px;}
+}
+.team-container .team-body .owl-carousel .owl-stage-outer .owl-stage .owl-item .card-2{
+  position: relative;
+  animation-name: card2;
+  animation-duration: 1s;
+}
+@keyframes card2{
+  from{top:400px}
+  to{top: 0px;}
+}
+.team-container .team-body .owl-carousel .owl-stage-outer .owl-stage .owl-item .card-3{
+  position: relative;
+  animation-name: card3;
+  animation-duration: 1s;
+}
+@keyframes card3{
+  from{left:400px}
+  to{left: 0px;}
+} 
 /* contact */
 .contact{
   width: 100%;
   overflow: hidden;
   position: relative;
   height: 100vh;
+  background-image: url("../assets/cow04.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
 }
 .contact-container{
   padding: 5px;
 }
 .contact-container .map{
-  width: 100%;
-  overflow: hidden;
-}
-.contact-container .map .map-container{
-  overflow: hidden;
-}
-.contact-container .map .map-container>img{
-  width: 100%;
-  height: 50vh;
-}
-.contact-container .contact-body{
   position: relative;
   width: 100%;
-  bottom:9rem;
 }
-.contact-container .contact-body .main-container{
+.contact-container .contact-body{
   position: absolute;
   background-color: white;
   width: 70%;
   margin-left: 15%;
-  display: flex;
   border-radius: 5px;
   box-shadow: 1px 1px 10px gainsboro;
+  top: 20%;
+}
+ .contact-container .contact-body .main-container{
+  display: flex;
 }
 .contact-body .main-container .sub-container{
   padding: 10px;
@@ -624,14 +696,13 @@ nav .navigation ul li a:hover{
 }
 .sub-container .sub-container-body .c-body .c-desc p{
   color: gray;
-}
+} 
 
 /* login */
 .login{
   width: 100%;
   background-image: url("../assets/cow04.jpg");
-  background-size: 100% 600px;
-  height: 600px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -715,11 +786,8 @@ nav .navigation ul li a:hover{
 .login-main .login-body .button .button-container .login-btn:hover{
   background-color: #cf7500;
 }
-/* carousel */
+/* about carousel */
 .about-down{
-  /* background-image: url("../assets/back-cow1.jpg");
-  width: 100%;
-  background-size: 40%; */
   overflow: hidden;
   z-index: 0;
   padding: 20px
@@ -750,7 +818,7 @@ nav .navigation ul li a:hover{
    height: 350px;
 }
 .about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item{
-  transition: 0.3s linear;
+  transition: 0.5s linear;
   padding-top: 40px;
 }
 .about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item{
@@ -780,8 +848,11 @@ nav .navigation ul li a:hover{
   background-color: white;
   box-shadow: 5px 5px 10px gainsboro;
   border-radius: 5px;
-  padding-top: 20px!important;
+  padding-top: 20px;
 }
 .about-down-container .owl-carousel .owl-stage-outer .owl-stage .center .item>.img img{
   transform: scale(1.1,1.1);
+}
+.about-down-container .owl-carousel .owl-stage-outer .owl-stage .center .item .i-name p{
+  padding-top: 10px;
 }

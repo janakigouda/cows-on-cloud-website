@@ -19,7 +19,7 @@ function Nav() {
     const [navbar, setNavbar] = useState(false);
 
     const changeBackgrounfcolor= () =>{
-        if(window.scrollY >= 10){
+        if(window.scrollY >= 1){
             setNavbar(true)
         }else{
             setNavbar(false)

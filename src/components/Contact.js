@@ -1,14 +1,12 @@
 import React from 'react';
-import map from '../assets/map.png';
+import MapContainer from './google-map';
 
 export default function Contact() {
     return (
         <div className="contact">
             <div className="contact-container">
                 <div className="map">
-                    <div className="map-container">
-                        <img src={map} alt="map" />
-                    </div>
+                    <MapContainer />
                 </div>
                 <div className="contact-body">
                     <div className="main-container">
@@ -19,10 +17,10 @@ export default function Contact() {
                             <div className="sub-container-body">
                                 <div className="c-body">
                                     <div className="b-input">
-                                        <input type="text" placeholder="Your Name *" className="input"/>
-                                        <input type="email" placeholder="Your Email *" className="input"/>
-                                        <input type="number" placeholder="Your Number *" className="input"/>
-                                        <input type="text" placeholder="Your Message *" className="input"/>
+                                        <input type="text" placeholder="Your Name *" className="input" />
+                                        <input type="email" placeholder="Your Email *" className="input" />
+                                        <input type="number" placeholder="Your Number *" className="input" />
+                                        <input type="text" placeholder="Your Message *" className="input" />
                                     </div>
                                 </div>
                                 <div className="c-button">

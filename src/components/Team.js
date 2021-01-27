@@ -40,7 +40,7 @@ class Team extends React.Component {
                     </div>
                     <div className="team-body">
                         <OwlCarousel className="slider-items owl-carousel" {...options}>
-                            <div className="card">
+                            <div className="card card-1">
                                 <div className="card-img">
                                     <img src={sujit} alt="sujit"></img>
                                 </div>
@@ -60,7 +60,7 @@ class Team extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card">
+                            <div className="card card-2">
                                 <div className="card-img">
                                     <img src={prasad} alt="prasad"></img>
                                 </div>
@@ -80,7 +80,7 @@ class Team extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card">
+                            <div className="card card-3">
                                 <div className="card-img">
                                     <img src={md} alt="md"></img>
                                 </div>
