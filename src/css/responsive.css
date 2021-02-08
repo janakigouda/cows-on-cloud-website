@@ -80,9 +80,21 @@
       }
 
     /* home */
-    .home{
-        height: 50vh;
-        background-size:100% 50vh;
+    .home-container{
+        margin-top: 10px;
+        padding: 100px 30px 0px 0px;
+    }
+    .home-container .unnamed .unnamed-img{
+        width: 60%;
+    }
+    .home-container .c-name>div{
+        font-size:60px;
+    }
+    .home-container .c-desc div{
+        font-size: 20px;
+    }
+    .back-img1{
+        width: 40%;
     }
     /* about */
     .about-container{
@@ -92,13 +104,13 @@
     }
     .ab-para{
         padding: 5px;
-      }
-    /* team */
-    .team-container .team-body .card .card-img{
-        margin-left: 9%;
     }
-    .team-container .team-body .card .desc .social-media{
-        margin-left: 10%;
+    .pngimgs .png-img .png-img1{
+       width: 70%;
+    }
+    .pngimgs .png .png1{
+        margin-left: 20%;
+        width: 80%;
     }
     /* contact */
     .contact{
@@ -130,6 +142,9 @@
         padding:8px 40px;
     }
     /* about carousel */
+    .about-down{
+        margin-top: 50px;
+    }
     .about-down-container{
         width: 90%;
         margin-left: 5%;
@@ -168,9 +183,36 @@
     .services-container .ser-body .ser-card2 .ser-desc{
         margin-top: 40px;
     }
+    /* team */
+    .team-container .team-body .card .card-img{
+        width: 120px;
+        height: 200px;
+      }
+      .team-container .team-body .card .card-img>img{
+        width: 150px;
+        height: 150px;
+        margin-left: 25px;
+        margin-top: 25px;
+      }
+      .team-container .team-body .card-2 .card-img>img{
+          margin-left: -50px;
+      }
+      .team-container .team-body .card .desc .f-name{
+        padding: 15px 5px 5px 5px;
+        font-size: 20px;
+      }
+      .team-container .team-body .card .desc .social-media{
+        margin-left: 26%;
+      }
+      /* contact */
+      .contact-container .contact-body{
+        margin-left: 9%;
+      }
+      /* login */
+      .login-main .login-body .input-body .input{
+        margin-left:0%;
+      }
 }
-
-
 @media only screen and (min-width:350px) and (max-width: 600px){
     .header{
         width: 100%;
@@ -299,24 +341,27 @@
         margin-left: 190px;
       }
     /* home */
-    .home{
-        height: 60vh;
-        background-size:100% 60vh;
-    }
     .home-container{
-        padding: 180px 10px 10px 5px;
+        margin-top: 10px;
+        padding: 30px 30px 0px 0px;
+    }
+    .home-container .unnamed .unnamed-img{
+        width: 60%;
     }
     .home-container .c-name{
-        padding: 25px 5px 5px 25px;
-    }
-    .home-container .c-name>div{
-        font-size: 30px;
+        padding: 0px 5px 5px 50px;
     }
     .home-container .c-desc{
-        padding: 0px 0px 0px 25px;
+        padding: 8px 5px 5px 20px;
+    }
+    .home-container .c-name>div{
+        font-size:40px;
     }
     .home-container .c-desc div{
-        font-size: 15px;
+        font-size: 10px;
+    }
+    .back-img1{
+        width: 40%;
     }
     /* about */
     .about-container{
@@ -334,6 +379,12 @@
     .ab-para p{
         font-size: 15px;
     }
+    .pngimgs{
+        display: none;
+    }
+     .about-down{
+        margin-top: 15px;
+      }
     /* contact */
     .contact{
         height: 110vh;
@@ -392,13 +443,6 @@
     .sub-container .sub-container-body .c-body .c-desc p{
         font-size: 12px;
     }
-    /* team */
-    .team-container .team-body .card .card-img{
-        margin-left: 20%;
-    }
-    .team-container .team-body .card .desc .social-media{
-        margin-left: 20%;
-    }
     /* login */
     .login{
         height: 65vh;
@@ -418,15 +462,19 @@
     }
     .login-main .login-body .input-body .input{
         height: 15px;
+        margin-left: 0;
     }
     .login-main .login-body .input-body .input::placeholder{
         font-size: 12px;
     }
     .login-main .login-body .button .button-container .login-btn{
-        padding: 5px 30px;
+        padding: 9px 30px;
         font-size: 14px;
     }
     /* services */
+    .services-container .ser-head .ser-name>h3{
+        font-size: 30px;
+    }
     .services-container .ser-body{
         width:90%;
         margin-left: 5%;
@@ -462,6 +510,54 @@
     .services-container .ser-body .ser-card2 .ser-desc{
         margin-top: 10px;
     }
+    /* team */
+    .team-container{
+       padding: 5px;
+    }
+    .team-container .t-name>div{
+        font-size: 25px;
+      }
+    .team-container .team-body{
+        margin: 0;
+    }
+    .team-container .team-body .card{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .team-container .team-body .card-1{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .team-container .team-body .card-2{
+        display: flex;
+        flex-flow:column nowrap;
+    }
+    .team-container .team-body .card .card-img{
+        width: 60%;
+        height: 200px;
+        margin-top: 20px;
+        margin-left:20%;
+    }
+    .team-container .team-body .card .card-img>img{
+        width: 80%;
+        height: 150px;
+        margin-left: 10%;
+        margin-top: 25px;
+    }
+    .team-container .team-body .card .desc{
+        padding: 0;
+        width: 100%;
+    }
+    .team-container .team-body .card .desc .f-name{
+        font-size: 22px;
+        padding: 25px 5px 5px 5px;
+    }
+    .team-container .team-body .card .desc .social-media{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 20px;
+    } 
+
 }
 
 @media only screen and (min-width:280px) and (max-width: 340px){
@@ -645,10 +741,19 @@
     .ab-para p{
         font-size: 14px;
     }
+    .pngimgs{
+        display: none;
+    }
+     .about-down{
+        margin-top: 15px;
+    }
     /* services */
     .services-container .ser-body{
         width:90%;
         margin-left: 5%;
+    }
+    .services-container .ser-head .ser-name>h3{
+        font-size: 30px;
     }
     .services-container .ser-body .ser-card1,
     .services-container .ser-body .ser-card2{
@@ -682,41 +787,55 @@
         margin-top: 10px;
     }
     /* team */
-    .team-container .t-name>div{
-        font-size: 22px;
-    }
-    .team-container .team-body .card .card-img{
-        margin-left: 23%;
-        width: 150px;
-        height: 150px;
-        border-radius: 150px;
-    }
-    .team-container .team-body .card .card-img>img{
-        width: 120px;
-        height: 120px;
-        border-radius: 120px;
-    }
-    .team-container .team-body .card .desc .f-name{
-        font-size: 20px;
-    }
-    .team-container .team-body .card .desc .founder{
-        font-size: 12px;
-    }
-    .team-container .team-body .card .desc .social-media{
-        margin-left: 20%;
-    }
-    .team-container .team-body .card .desc .social-media>div{
-        height: 40px;
-        width: 40px;
-        border-radius: 40px;
-    }
-    .team-container .team-body .card .desc .social-media div>.fa{
-        font-size: 15px;
-        padding: 13px;
-    }
+    .team-container{
+        padding: 5px;
+     }
+     .team-container .t-name>div{
+         font-size: 25px;
+       }
+     .team-container .team-body{
+         margin: 0;
+     }
+     .team-container .team-body .card{
+         width: 90%;
+         margin-left: 5%;
+     }
+     .team-container .team-body .card-1{
+         display: flex;
+         flex-flow: column nowrap;
+     }
+     .team-container .team-body .card-2{
+         display: flex;
+         flex-flow:column nowrap;
+     }
+     .team-container .team-body .card .card-img{
+         width: 60%;
+         height: 200px;
+         margin-top: 20px;
+         margin-left:20%;
+     }
+     .team-container .team-body .card .card-img>img{
+         width: 80%;
+         height: 150px;
+         margin-left: 10%;
+         margin-top: 25px;
+     }
+     .team-container .team-body .card .desc{
+         padding: 0;
+         width: 100%;
+     }
+     .team-container .team-body .card .desc .f-name{
+         font-size: 22px;
+         padding: 25px 5px 5px 5px;
+     }
+     .team-container .team-body .card .desc .social-media{
+         width: 60%;
+         margin-left: 20%;
+         margin-bottom: 20px;
+     } 
     /* contact */
     .contact{
-        height: 160vh;
+        height: 100vh;
     }
     .contact-container{
         padding: 0;
@@ -724,6 +843,7 @@
     .contact-container .contact-body{
         width: 90%;
         margin-left:5% ;
+        top:20%
     }
     .contact-container .contact-body .main-container{
         display: block;
@@ -783,11 +903,11 @@
     .login-main{
         width: 80%;
         margin-left: 6%;
-        height: 40vh;
+        height: 50vh;
         background-size: 100% 400px;
     }
     .login-main .login-body .input-body{
-        padding:  10px 20px 20px 0px;
+        padding:  10px 10px 10px 0px;
     } 
     .login-main .login-body .input-body .input{
         height: 10px;

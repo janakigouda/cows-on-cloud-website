@@ -8,7 +8,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const option = {
-    nav:true,
+    nav:false,
     items: 2,
     loop: true,
     dots:true,

@@ -1,5 +1,8 @@
 import React from 'react';
 import Carousel from './carousel';
+import back1 from '../assets/unnamed (1).png';
+import back from '../assets/unnamed.png';
+
 
 function About() {
     return (
@@ -12,10 +15,19 @@ function About() {
                         <p className="para3">Making technology an efficient tool to Milk Forecasting, Remote veterinary services, Linking with fintech and insuring cattle, Enabling farmers to increase their income,Rear desi cattle in situ by breed identifications. All these technologies will reach each and every small-holder farmer via App mobile based application at every Village level for all in situ management of indeginious farmers and their cattle.</p>
                     </div>
                 </div>
+                <div className="about-down">
+                    <Carousel />
+                </div>
             </div>
-            <div className="about-down">
-                <Carousel />
+            <div className="pngimgs">
+                <div className="png-img">
+                    <img className="png-img1" src={back1} alt="background-img1" />
+                </div>
+                <div className="png">
+                    <img src={back} alt="bacground-img" className="png1" />
+                </div>
             </div>
+
         </div>
     );
 }

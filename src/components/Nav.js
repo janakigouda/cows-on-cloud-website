@@ -33,11 +33,11 @@ function Nav() {
                 <div className="navigation-container">
                     <nav className={navbar ? "active" : ""}>
                         <div id="menuToggle" className="logo2" onClick={() => setActive(!active)}><i className="fa fa-bars"></i></div>
-                        <div className="logo1"><Link to="/">CowsOnCloud</Link></div>
+                        <div className="logo1"><Link to="/cows-on-cloud-website">CowsOnCloud</Link></div>
                         <div className={active ? "navigation open" : "navigation"}>
                             <ul onClick={() => setActive(!active)} className="navbar">
                                 <li>
-                                    <NavLink to="/" activeClassName="navbar__link--active" className="navbar__link" >Home</NavLink>
+                                    <NavLink to="/cows-on-cloud-website" activeClassName="navbar__link--active" className="navbar__link" exact={true} >Home</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="/about" activeClassName="navbar__link--active" className="navbar__link">About</NavLink>
@@ -75,7 +75,7 @@ function Nav() {
                     <Route path="/login">
                         <Login />
                     </Route>
-                    <Route path="/">
+                    <Route path="/cows-on-cloud-website" exact={true}>
                         <Home />
                     </Route>
                 </Switch>
