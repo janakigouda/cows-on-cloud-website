@@ -18,9 +18,9 @@ export default function Footer() {
                         Contact Details
                         </div>
                         <div className="details">
-                            <h4>Adis Technologies</h4>
+                            <h4>Adis Technologies PVT</h4>
                             <p>Hanuman nagar, Hindwadi</p>
-                            <p>Belgaum</p>
+                            <p>Belagavi</p>
                             <p>Karnataka</p>
                             <p><a href="mailto:cowsoncloud@gmail.com">Email: cowsoncloud@gmail.com</a></p>
                             <a href="tel:+91 876543210"> <i className="fa fa-phone" aria-hidden="true"></i> +91 876543210</a>
@@ -42,8 +42,8 @@ export default function Footer() {
                     </div>
                     <div className="division2">
                         <div className="copyright">
-                            <h4>©2021 <a href="/">CowsOnCloud.com </a>. All Rights Reserved.</h4>
-                            <h3>Managed by Adis Technologies | Belagavi</h3>
+                            <h4>©2021 <a href="/">CowsOnCloud.com </a>| All Rights Reserved.</h4>
+                            <h3>Managed by Adis Technologies PVT | Belagavi</h3>
                         </div>
                     </div>
                 </div>

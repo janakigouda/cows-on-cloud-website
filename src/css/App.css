@@ -20,7 +20,7 @@ nav .logo2{
   background-color:white ;
 }
 nav{
-  background-color: transparent;
+  background-color: white;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -30,7 +30,6 @@ nav{
   height: inherit;
 }
 nav.active{
-  background-color:white ;
   width: 100%;
   transition:0.2s linear ;
   box-shadow: 1px 1px 10px gainsboro;
@@ -297,7 +296,7 @@ nav .navigation ul li a:hover{
 }
 .home-container{
   margin-top: 50px;
-  padding: 120px 30px 0px 0px;
+  padding: 90px 30px 0px 0px;
 }
 .home-container .c-name{
   padding: 0px 25px 25px 150px;
@@ -355,29 +354,78 @@ nav .navigation ul li a:hover{
   z-index: 1;
 }
 .about-container{
-  margin: 40px;
-  width: 75%;
-  margin-left: 12.5%;
-  box-shadow:  2px 2px 10px #f2a239,
-  -2px -2px 10px #eb9a43;
-  background-color: white;
-  border-radius: 5px;
-  opacity: 0.8;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  width: 50%;
+  margin-left: 5%;
 }
 .ab-name{
-  text-align: center;
   padding: 40px 0px 0px 0px ;
-  font-size: 25px;
-  color: black;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(38, 38, 38);
+}
+.about-container .ab .ab-name .hr1{
+  margin-top: 10px;
+  border: 1px solid #f5ad60;
+  width: 90px;
+  transition: width 1s;
+}
+.about-container:hover .ab .ab-name .hr1{
+  width: 130px;
 }
 .ab-para{
+  font-family:'Times New Roman', Times, serif;
   position: relative;
-  padding: 40px;
+  padding: 40px 0 40px 0;
   z-index: 1;
 }
 .ab-para p{
   letter-spacing: 0.5px;
   line-height: 25px;
+  font-size: 16px;
+}
+.ab-para .readmore{
+  padding-top: 10px;
+  color: #eb9a43;
+  font-size: 17px;
+}
+.about-container.added{
+  /* z-index: 2; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(61, 68, 61, 0.5);
+}
+.about-container.added .ab{
+  width: 60%;
+  margin-left: 20%;
+  background-color: white;
+  opacity: 1;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px gray;
+}
+.about-container.added .ab .ab-name{
+  text-align: center;
+}
+.added .ab .ab-name .hr1{
+  text-align: center;
+  margin-left:42%;
+  transform: scaleX(0);  
+  transition: transform 1s ease-in-out;
+}
+.added .ab:hover .ab-name .hr1{
+  transform: scaleX(1);
+}
+.added .ab .ab-para{
+  padding: 30px;
 }
 /* about carousel */
 .about-down{
@@ -469,6 +517,16 @@ nav .navigation ul li a:hover{
 .services-container .ser-head .ser-name{
   padding:5px ;
 }
+.services-container .ser-head .ser-name hr{
+  border: 1px solid #eb9a43;
+  width: 260px;
+  margin-left:40%;
+  transform: scaleX(0);  
+  transition: transform 1s ease-in-out;
+}
+.services-container:hover .ser-head .ser-name hr{
+  transform: scaleX(1);  
+}
 .services-container .ser-head .ser-par>p{
   font-size: 15px;
   color: #cf7500;
@@ -488,6 +546,7 @@ nav .navigation ul li a:hover{
 .services-container .ser-body .ser-card2{
   background-color: #fffefa;
   box-shadow: 1px 1px 10px rgb(223, 163, 91);
+  transition: 0.5s ;
 }
 .services-container .ser-body .ser-card1{
   display: flex;
@@ -495,6 +554,10 @@ nav .navigation ul li a:hover{
   padding: 10px;
   margin: 20px;
   border-radius: 100px;
+}
+.services-container .ser-body .ser-card1:hover,
+.services-container .ser-body .ser-card2:hover{
+  border-bottom: 5px solid #eb9a43;
 }
 .services-container .ser-body .ser-card1 .ser-icon,
 .services-container .ser-body .ser-card2 .ser-icon{
@@ -533,7 +596,6 @@ nav .navigation ul li a:hover{
   text-align: center;
   margin-top: 70px;
 }
-
 .services-container .ser-body .ser-card1 .ser-desc h4,
 .services-container .ser-body .ser-card2 .ser-desc h4{
   font-size: 25px;
@@ -593,6 +655,16 @@ nav .navigation ul li a:hover{
   font-weight: 700;
   color: black;
 }
+.team-container .t-name>hr{
+  border: 1px solid #eb9a43;
+  width: 300px;
+  margin-left:38%;
+  transform: scaleX(0);  
+  transition: transform 1s ease-in-out;
+}
+.team-container:hover .t-name>hr{
+  transform: scaleX(1);  
+}
 .team-container .team-body{
   margin: 20px;
 }
@@ -603,6 +675,10 @@ nav .navigation ul li a:hover{
   z-index: 1;
   margin-bottom: 20px;
   box-shadow: 1px 1px 5px rgb(238, 179, 134);
+  transition: 0.5s;
+}
+.team-container .team-body .card:hover{
+  border-bottom: 10px solid #eb9a43;
 }
 .team-container .team-body .card-1{
   display: flex;
@@ -615,27 +691,27 @@ nav .navigation ul li a:hover{
 .team-container .team-body .card-1 .card-img{
   position: relative;
   background-color: #f5d1a2;
-  height: 300px;
+  height: 280px;
   width: 150px;
 }
 .team-container .team-body .card-2 .card-img{
   position: relative;
   background-color: #f5d1a2;
-  height: 300px;
+  height: 280px;
   width: 150px;
   margin-left: 10px;
 }
 .team-container .team-body .card-2 .card-img>img{
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   border-radius: 5px;
   margin-top: 50px;
   margin-left: -100px;
   transition: 0.5s;
 }
 .team-container .team-body .card-1 .card-img>img{
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   border-radius: 5px;
   margin-top: 50px;
   margin-left: 50px;
@@ -673,7 +749,7 @@ nav .navigation ul li a:hover{
   border-radius: 50px;
   background-color: #f0a500;
 }
-.team-container .team-body .card .desc .social-media div>.fa{
+.team-container .team-body .card .desc .social-media div a>.fa{
   font-size: 20px;
   color: white;
   padding: 15px;
@@ -820,92 +896,37 @@ nav .navigation ul li a:hover{
 } 
 
 /* login */
-.login{
-  width: 100%;
-  background-color: white;
-  overflow: hidden;
+.home .login-container .btns{
+  padding: 30px;
 }
-.login-container{
-  padding:50px 25px 25px 25px;
-  margin-bottom: 50px;
-}
-.login-main{
-  width: 35%;
-  margin-left: 32.5%;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 1px 1px 10px rgb(253, 157, 83);
-  padding: 10px;
-  height: 350px;
-  overflow: hidden;
-}
-.login-main .login-name{
-  padding: 10px ;
-  text-align: center;
-  border-bottom: 1px solid rgb(253, 157, 83);
-}
-.login-main .login-name div{
-  font-size: 25px;
-  font-weight: 600;
-  color: black;
-}
-.login-main .login-body{
-  width: 100%;
-}
-.login-main .login-body .input-body{
-  padding:  30px 10px 30px 15px;
-  border-bottom: 1px solid rgb(253, 157, 83);
-}
-.login-main .login-body .input-body .input{
-  width: 90%;
-  margin-left:5% ;
-  height: 20px;
-  margin: 10px;
-  padding: 10px;
-  outline: none;
-  border-radius: 30px;
-  margin-bottom: 20px;
-  background: transparent;
-  border: 1px solid rgb(250, 151, 98);
-  box-shadow: 1px 1px 3px rgb(253, 157, 83);
-}
-.login-main .login-body .input-body .input:focus,
-.login-main .login-body .input-body .input:hover{
-  outline: none;
-}
-.input:focus{
-  outline: none !important; 
-  border-color: #eb9a43 !important; 
-}
-.login-main .login-body .input-body .input::placeholder{
-  font-size: 14px;
-  font-weight: 400;
-  color: black;
-}
-.login-main .login-body .input-body input[type=email],
-.login-main .login-body .input-body input[type=password]{
-  color: black;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-}
-.login-main .login-body .button{
-  padding: 25px 5px 25px 5px;
+.home .login-container .btns .btns1{
+  padding-top:120px;
+  padding-bottom: 70px ;
+  padding-left: 20px;
   display: flex;
+  flex-flow: row nowrap;
 }
-.login-main .login-body .button .button-container{
-  width: 100%;
-  text-align: center;
+.home .login-container .btns .btns1 .button-container{
+  margin: 10px;
 }
-.login-main .login-body .button .button-container .login-btn{
-  padding: 10px 55px;
-  border-radius: 50px;
+.home .login-container .btns .btns1 .button-container .button{
   background-color: #f0a500;
+  padding: 15px 80px;
   color: white;
-  text-decoration: none;
-  font-weight: 400;
-  /* letter-spacing: 0.5px; */
-  font-size: 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gainsboro;
+  letter-spacing: 1px;
+  font-family:Arial, Helvetica, sans-serif;
 }
-.login-main .login-body .button .button-container .login-btn:hover{
-  background-color: #cf7500;
+.home .login-container .btns .btns1 .button-container .button:hover{
+  box-shadow: 5px 5px 10px gainsboro;
 }
+
+
+
+
+
+
+
+

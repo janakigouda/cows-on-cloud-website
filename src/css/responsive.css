@@ -97,13 +97,8 @@
         width: 40%;
     }
     /* about */
-    .about-container{
-        width: 80%;
-        margin-left: 7%;
-        padding: 20px;
-    }
-    .ab-para{
-        padding: 5px;
+    .added .ab .ab-name .hr1{
+        margin-left: 36%;
     }
     .pngimgs .png-img .png-img1{
        width: 70%;
@@ -122,25 +117,25 @@
         top:30%
     }
     /* login */
-    .login{
-        height: 500px;
-        background-size:100% 500px;
+    .home .login-container .btns{
+        padding: 20px;
+      }
+      .home .login-container .btns .btns1{
+        padding-top:150px;
+        padding-left:10px;
+        padding-bottom: 80px;
+      }
+      .home .login-container .btns .btns1 .button-container{
+        margin: 5px;
+      }
+      .home .login-container .btns .btns1 .button-container .button{
+        padding: 15px 60px;
+        font-size: 15px;
+      }
+      .login-container .unnamed .unnamed-img{
+        width: 60%;
     }
-    .login-container{
-        padding:60px 20px 20px 20px;
-    }
-    .login-main{
-        width: 40%;
-        margin-left: 29.5%;
-        background-size: 100% 400px;
-        height: 350px;
-    }
-    .login-main .login-body .input-body{
-        padding:  30px 10px 30px 15px;
-    }
-    .login-main .login-body .button .button-container .login-btn{
-        padding:8px 40px;
-    }
+    
     /* about carousel */
     .about-down{
         margin-top: 50px;
@@ -183,6 +178,9 @@
     .services-container .ser-body .ser-card2 .ser-desc{
         margin-top: 40px;
     }
+    .services-container .ser-head .ser-name hr{
+        margin-left:33% ;
+    }
     /* team */
     .team-container .team-body .card .card-img{
         width: 120px;
@@ -204,6 +202,9 @@
       .team-container .team-body .card .desc .social-media{
         margin-left: 26%;
       }
+    .team-container .t-name>hr{
+        margin-left: 28%;
+    }
       /* contact */
       .contact-container .contact-body{
         margin-left: 9%;
@@ -245,6 +246,7 @@
         display: none;
     }
     nav .open{
+        z-index: 1;
         display: block;
         background-color: white;
         position: fixed;
@@ -370,7 +372,7 @@
         margin-left: 5%;
     }
     .ab-name{
-        padding: 20px 0px 0px 0px ;
+        padding: 0px 0px 0px 20px ;
         font-size: 25px;
     }
     .ab-para{
@@ -384,6 +386,32 @@
     }
      .about-down{
         margin-top: 15px;
+    }
+    .about-container.added{
+        padding-top: 20px;
+        height: 150vh;
+    }
+    .about-container.added .ab{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .about-container.added .ab .ab-name{
+        padding: 0;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .about-container.added .ab .ab-name hr{
+        margin-left: 30%;
+    }
+    .about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item{
+        padding-top: 15px;
+      }
+    .about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .img img{
+        height: 200px;
+    }
+    .center{
+        height: 280px;
+        padding-top: 0px;
       }
     /* contact */
     .contact{
@@ -443,34 +471,31 @@
     .sub-container .sub-container-body .c-body .c-desc p{
         font-size: 12px;
     }
+
     /* login */
-    .login{
-        height: 65vh;
-        background-size:100% 65vh;
+    .home .login-container .btns .btns1 .button-container .signin.on,
+    .home .login-container .btns .btns1 .button-container .signup.on {
+         z-index: 2;
     }
-    .login-container{
-        padding: 15px;
+    .home .login-container .unnamed,
+    .login .bac-img{
+        display: none;
     }
-    .login-main{
-        width: 80%;
-        margin-left: 7%;
-        height: 46vh;
-        background-size: 100% 350px;
-    }
-    .login-main .login-body .input-body{
-        padding:  20px 10px 20px 15px;
-    }
-    .login-main .login-body .input-body .input{
-        height: 15px;
-        margin-left: 0;
-    }
-    .login-main .login-body .input-body .input::placeholder{
-        font-size: 12px;
-    }
-    .login-main .login-body .button .button-container .login-btn{
-        padding: 9px 30px;
-        font-size: 14px;
-    }
+    .home .login-container .btns .btns1{
+        padding-top:10px;
+        padding-bottom: 70px ;
+        flex-flow: column nowrap;
+      }
+      .home .login-container .btns .btns1 .button-container .div .button1{
+        padding: 15px 64px;
+        width: 100%;
+      }
+      .home .login-container .btns .btns1 .button-container .div .button2{
+        padding: 15px 60px;
+      }
+      .home .login-container .btns .btns1 .button-container .div {
+          margin: 10px;
+      }
     /* services */
     .services-container .ser-head .ser-name>h3{
         font-size: 30px;
@@ -509,6 +534,9 @@
     .services-container .ser-body .ser-card1 .ser-desc,
     .services-container .ser-body .ser-card2 .ser-desc{
         margin-top: 10px;
+    }
+    .services-container .ser-head .ser-name hr{
+        margin-left:10% ;
     }
     /* team */
     .team-container{
@@ -557,6 +585,10 @@
         margin-left: 20%;
         margin-bottom: 20px;
     } 
+    .team-container .t-name>hr{
+        width: 250px;
+        margin-left: 9%;
+    }
 
 }
 
@@ -709,34 +741,40 @@
         margin-left: 140px;
       }
     /* home */
-    .home{
-        height: 60vh;
-        background-size:100% 60vh;
-    }
     .home-container{
-        padding: 140px 10px 10px 5px;
+        margin-top: 10px;
+        padding: 30px 30px 0px 0px;
+    }
+    .home-container .unnamed .unnamed-img{
+        width: 60%;
     }
     .home-container .c-name{
-        padding: 25px 5px 5px 25px;
-    }
-    .home-container .c-name>div{
-        font-size: 30px;
+        padding: 0px 5px 5px 50px;
     }
     .home-container .c-desc{
-        padding: 0px 0px 0px 25px;
+        padding: 8px 5px 5px 20px;
+    }
+    .home-container .c-name>div{
+        font-size:40px;
     }
     .home-container .c-desc div{
-        font-size: 14px;
+        font-size: 9px;
+    }
+    .back-img1{
+        width: 40%;
     }
     /* about */
     .about-container{
-        margin: 5px;
-        padding: 5px;
+        margin-top: 5px;
         width: 90%;
-        margin-left: 4%;
+        margin-left: 5%;
     }
     .ab-name{
-        font-size: 22px;
+        padding: 0px 0px 0px 20px ;
+        font-size: 25px;
+    }
+    .ab-para{
+        padding: 18px;
     }
     .ab-para p{
         font-size: 14px;
@@ -747,6 +785,36 @@
      .about-down{
         margin-top: 15px;
     }
+    .about-container.added{
+        padding-top: 20px;
+        height: 200vh;
+    }
+    .about-container.added .ab{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .about-container.added .ab .ab-name{
+        padding: 0;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .about-container.added .ab .ab-name hr{
+        margin-left: 30%;
+    }
+    .about-container.added .ab .ab-para p{
+        font-size: 14px;
+    }
+    .about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item{
+        padding-top: 15px;
+      }
+    .about-down-container .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .img img{
+        height: 180px;
+    }
+    .center{
+        height: 250px;
+        padding-top: 0px;
+    }
+
     /* services */
     .services-container .ser-body{
         width:90%;
@@ -785,6 +853,10 @@
     .services-container .ser-body .ser-card1 .ser-desc,
     .services-container .ser-body .ser-card2 .ser-desc{
         margin-top: 10px;
+    }
+    .services-container .ser-head .ser-name hr{
+        width: 250px;
+        margin-left:5% ;
     }
     /* team */
     .team-container{
@@ -833,6 +905,10 @@
          margin-left: 20%;
          margin-bottom: 20px;
      } 
+     .team-container .t-name>hr{
+        width: 250px;
+        margin-left: 4%;
+    }
     /* contact */
     .contact{
         height: 100vh;
@@ -893,30 +969,26 @@
         font-size: 12px;
     }
     /* login */
-    .login{
-        height: 65vh;
-        background-size:100% 65vh;
+    .home .login-container .unnamed,
+    .login .bac-img{
+        display: none;
     }
-    .login-container{
-        padding: 15px;
-    }
-    .login-main{
-        width: 80%;
-        margin-left: 6%;
-        height: 50vh;
-        background-size: 100% 400px;
-    }
-    .login-main .login-body .input-body{
-        padding:  10px 10px 10px 0px;
-    } 
-    .login-main .login-body .input-body .input{
-        height: 10px;
-    }
-    .login-main .login-body .input-body .input::placeholder{
-        font-size: 12px;
-    }
-    .login-main .login-body .button .button-container .login-btn{
-        padding: 5px 20px;
-        font-size: 12px;
-    } 
+    .home .login-container .btns .btns1 .button-container .div .button1{
+        padding: 15px 64px;
+        width: 100%;
+      }
+      .home .login-container .btns .btns1 .button-container .div .button2{
+        padding: 15px 60px;
+      }
+    
+      .home .login-container .btns .btns1 .button-container .div {
+          margin: 10px;
+      }
+      .home .login-container .btns .btns1{
+        width: 100%;
+        padding-top:10px;
+        padding-bottom: 0px ;
+        padding-left: 0;
+        flex-flow: column nowrap;
+      }
 }
