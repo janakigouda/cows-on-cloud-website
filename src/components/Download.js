@@ -19,7 +19,7 @@ function Download() {
                                 </div>
                             </div>
                         </a>
-                        <a href="/" target="_blank" rel="noopener noreferrer" className="apple-btn">
+                        <a href="/#" target="_blank" rel="noopener noreferrer" className="apple-btn" disabled>
                             <div className="apple">
                                 <img src={apple} alt="apple" />
                                 <div className="btn-name">
