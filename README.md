@@ -2,7 +2,8 @@
 <br>
 
 
-![image](https://user-images.githubusercontent.com/42041306/190872073-564b8283-9e97-4f72-9e2e-0580439378ad.png)
+![image](https://user-images.githubusercontent.com/42041306/190872119-f7b31ae6-ace4-4983-83a1-90bcf90d9fce.png)
+
 
 <br>
 <p>This project is all about cloning of one of the Animal digital information web application</p>
